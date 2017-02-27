@@ -1,0 +1,106 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Environment Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Environment namespace" /><meta name="Microsoft.Help.F1" content="NFX.Environment" /><meta name="Microsoft.Help.Id" content="N:NFX.Environment" /><meta name="Description" content="Provides configuration and environment-related(i.e. environment variables, command-line parser) classes" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Environment" /><meta name="file" content="N_NFX_Environment" /><meta name="guid" content="N_NFX_Environment" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Environment Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides configuration and environment-related(i.e. environment variables, command-line parser) classes</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_Behavior.htm" target="">Behavior</a></td><td><div class="summary">
+            Represents a piece of logic that can be applied to different entities declaratively as attribute or through configuration.
+            Behaviors are a form of inversion-of-control that allows to configure entities by code which itself can be injected by name from configuration.
+            Behaviors are a form of aspect-oriented programming as they allow to proclaim certain "behavior" that knows how to implement itself on various
+             application components (i.e. some behavior may inject Glue message inspector or log destination).
+            Behaviors can be used to enforce policies by performing pre-run checks  and throw exceptions if certain required providers are not injected/configured
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_BehaviorApplyException.htm" target="">BehaviorApplyException</a></td><td><div class="summary">
+            Thrown by Behavior class to indicate behavior apply error
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_BuildInformation.htm" target="">BuildInformation</a></td><td><div class="summary">
+            Retrieves build information encapsulated into a module in the form of an embedded resource
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_CommandArgsConfiguration.htm" target="">CommandArgsConfiguration</a></td><td><div class="summary">
+             Provides implementation of configuration based on arguments supplied from command line
+              which is "string[]". Arguments start with either "/" or "-" prefix. If any argument is not
+              prefixed then it is written as an auto-named attribute node of the root with its value set, otherwise a section (under root) with
+               argument's name is created. Any argument may have options. Any option may either consist of name
+                or name value pair delimited by "=".
+              Argument options are written as attribute nodes of their corresponding sections.
+              If option value specified without name (without "=") then option is auto-named
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigAttribute.htm" target="">ConfigAttribute</a></td><td><div class="summary">
+            Specifies how to apply configuration values to classes/fields/props
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigAttrNode.htm" target="">ConfigAttrNode</a></td><td><div class="summary">
+            Represents an attribute of a attribute node
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Environment_ConfigAttrNodeList.htm" target="">ConfigAttrNodeList</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigException.htm" target="">ConfigException</a></td><td><div class="summary">
+            Configuration-related exception
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigMacroContextAttribute.htm" target="">ConfigMacroContextAttribute</a></td><td><div class="summary">
+            Decorates classes or structs that act as a context object for macro evaluation - passed as context parameter to MacroRunner.Run(...context) method
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigNode.htm" target="">ConfigNode</a></td><td><div class="summary">
+            Provides configuration node abstraction for section and attribute nodes. This class is thread-safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigNodeEqualityComparer.htm" target="">ConfigNodeEqualityComparer</a></td><td><div class="summary">
+            Performs deep structural comparison of IConfigNodes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigSectionNode.htm" target="">ConfigSectionNode</a></td><td><div class="summary">
+            Represents configuration section node. This class is thread safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Environment_ConfigSectionNodeList.htm" target="">ConfigSectionNodeList</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ConfigStringBuilder.htm" target="">ConfigStringBuilder</a></td><td><div class="summary">
+            Facilitates the creation/building of strings from existing strings or configuration vectors.
+            This is used for example to build DB connect strings from host names that need
+            to be resolved via an external system
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_Configuration.htm" target="">Configuration</a></td><td><div class="summary">
+            Provides top-level configuration abstraction
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_DefaultMacroRunner.htm" target="">DefaultMacroRunner</a></td><td><div class="summary">
+            Provides default implementation for configuration variable macros.
+            NOTE: When serialized a new instance is created which will not equal by reference to static.Instance property
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_FactoryUtils.htm" target="">FactoryUtils</a></td><td><div class="summary">
+            Provides helper methods for dynamic object creation and configuration
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_FileConfiguration.htm" target="">FileConfiguration</a></td><td><div class="summary">
+            Provides file-based configuration base object used for concrete implementations such as XML or INI file base configurations
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_JSONConfiguration.htm" target="">JSONConfiguration</a></td><td><div class="summary">
+            Provides implementation of configuration based on a classic JSON content
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_LaconicConfiguration.htm" target="">LaconicConfiguration</a></td><td><div class="summary">
+             Provides implementation of configuration based on Laconic content format
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_MemoryConfiguration.htm" target="">MemoryConfiguration</a></td><td><div class="summary">
+            Implements configuration that can not be persisted/loaded anywhere - just stored in memory
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_NodeOverrideRules.htm" target="">NodeOverrideRules</a></td><td><div class="summary">
+            Contains node override rule definitions such as override specifier names and values.
+            This class is used for merging/override of configurations/nodes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_ScriptRunner.htm" target="">ScriptRunner</a></td><td><div class="summary">
+            Executes configuration scripts which are embedded in configuration
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_Vars.htm" target="">Vars</a></td><td><div class="summary">
+            Allows for simple ad-hoc environment var passing to configuration
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_WindowsEnvironmentVariableResolver.htm" target="">WindowsEnvironmentVariableResolver</a></td><td><div class="summary">
+            Resolves variables using Windows environment variables.
+            NOTE: When serialized a new instance is created which will not equal by reference to static.Instance property
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Environment_XMLConfiguration.htm" target="">XMLConfiguration</a></td><td><div class="summary">
+            Provides implementation of configuration based on a classic XML content
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigAttrNode.htm" target="">IConfigAttrNode</a></td><td><div class="summary">
+            Represents a read-only attribute of a attribute node
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigNode.htm" target="">IConfigNode</a></td><td><div class="summary">
+            Provides read-only configuration node abstraction for section and attribute nodes
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigNodeProvider.htm" target="">IConfigNodeProvider</a></td><td><div class="summary">
+            Represents an entity that provides config node. It is primarily used for includes
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigSectionNode.htm" target="">IConfigSectionNode</a></td><td><div class="summary">
+            Provides read-only configuration section node abstraction
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigSettings.htm" target="">IConfigSettings</a></td><td><div class="summary">
+            Represents an entity that provides a type-safe access to configuration settings that come from Configuration nodes.
+            This class obviates the need for navigation between config nodes on every property get and facilitates faster access to some config parameters
+            that need to be gotten efficiently, as they are now kept cached in RAM in native format (i.e. DateTime vs. string) as fields.
+            Usually classes that implement this interface are singleton and they get registered with the application using IApplication.RegisterConfigSettings()
+            method. Warning: the implementation must be thread-safe and allow property getters to keep reading while ConfigChanged() notification happens
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigStringBuilder.htm" target="">IConfigStringBuilder</a></td><td><div class="summary">
+            Denotes objects that can build a string (i.e. a database connection string) from the configured
+            state/properties. This is used for example to build DB connect strings from host names that need
+            to be resolved via an external system
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigurable.htm" target="">IConfigurable</a></td><td><div class="summary">
+            Designates entities that may be configured
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IConfigurationPersistent.htm" target="">IConfigurationPersistent</a></td><td><div class="summary">
+            Designates entities that may persist their parameters/state in configuration
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IEnvironmentVariableResolver.htm" target="">IEnvironmentVariableResolver</a></td><td><div class="summary">
+            Represents an entity that can resolve variables
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Environment_IMacroRunner.htm" target="">IMacroRunner</a></td><td><div class="summary">
+            Represents an entity that runs config var macros
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Environment_OverrideSpec.htm" target="">OverrideSpec</a></td><td><div class="summary">
+            Override specifications that dictate what to do when another node supplies entity with the same name
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Environment+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

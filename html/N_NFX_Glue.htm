@@ -1,0 +1,170 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Glue Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Glue namespace" /><meta name="Microsoft.Help.F1" content="NFX.Glue" /><meta name="Microsoft.Help.Id" content="N:NFX.Glue" /><meta name="Description" content="Provides master contract stipulations and native implementations for distributed component communication technology. &quot;Glue&quot; is used to glue contract endpoints between hosts" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Glue" /><meta name="file" content="N_NFX_Glue" /><meta name="guid" content="N_NFX_Glue" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><link type="text/css" rel="stylesheet" href="./../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Glue Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides master contract stipulations and native implementations for distributed component communication technology. "Glue" is used to glue contract endpoints between hosts</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ArgsMarshallingAttribute.htm" target="">ArgsMarshallingAttribute</a></td><td><div class="summary">
+            Decorates methods stipulating type of RequestMsg-derivative used for method call arguments marshalling
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_AuthenticationSupportAttribute.htm" target="">AuthenticationSupportAttribute</a></td><td><div class="summary">
+            Indicates that contract supports authentication using AuthenticationHeader.
+            When header is passed then Glue server will use its data to set user context through Application.SecurityManager.
+            If this attribute not set then Glue runtime will ignore AuthenticationHeader
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Binding.htm" target="">Binding</a></td><td><div class="summary">
+            Represents a particular named binding.
+            Binding type defines a protocol by implementing a transport instance management strategy
+            that support particular technology, such as blocking TCP or async ZeroMQ.
+            Binding instance retains state/config information about all transports
+            and has logic for Node's host:service resolution.
+            Bindings are services, meaning - they can have state/threads that
+            manage transport channels that operate under binding
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Bindings.htm" target="">Bindings</a></td><td><div class="summary">
+            A registry of Binding-derived instances
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Call.htm" target="">Call</a></td><td><div class="summary">
+            Describes a flow of events originating from a Glue client call
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_CallReactor.htm" target="">CallReactor</a></td><td><div class="summary">
+            Facilititates execution of asynchronous client calls and their corresponding callback functions.
+            This class introduces callback execution latency and is handy for cases where eventual event flow need to execute regardless of timing.
+            The latency depends on other callback implementation as the reactor services all calls from a single thread
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_CallSlot.htm" target="">CallSlot</a></td><td><div class="summary">
+            Represents a class that is immediately returned after transport sends RequestMsg.
+            This class provides CallStatus and RequestID properties where the later is used to match the incoming ResponseMsg.
+            CallSlots are kinds of "spirit-less" mailboxes that keep state about the call, but do not posess any threads/call events.
+            Working with CallSlots from calling code's existing thread of execution is the most efficient way of working with Glue (in high load cases), as
+             it does not create extra object instances (tasks do) for asynchronous coordination and continuation.
+            It is possible to obtain an instance of CallSlot.AsTask in which case that instance is registered with the framework-internal reactor
+             so task does complete normally even on timeout, however, in high-throughput apps (10K+ calls per second) this method is not the most efficient one
+             as it allocates additional objects (task, list entry etc.) that eventually increase GC load for long runs.
+             Note: A 3.2 Ghz 4-Core I7 server with 8Gb of ram can easily handle 40K 2-way calls a second (given little business server logic and simple payload).
+             See also: CallReactor class
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ClientCallException.htm" target="">ClientCallException</a></td><td><div class="summary">
+            Thrown by the Glue framework when clients try to perfom a call but that action fails
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ClientEndPoint.htm" target="">ClientEndPoint</a></td><td><div class="summary">
+            Represents an ancestor for client classes that make calls to server endpoints.
+            This and descendant classes are thread safe ONLY for making non-constructing/destructing remote calls, unless ReserveTransport is set to true
+            in which case no operation is thread safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ClientMsgInspectionException.htm" target="">ClientMsgInspectionException</a></td><td><div class="summary">
+            Thrown by the Glue framework when client message inspector fails with exception
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ClientTransport.htm" target="">ClientTransport</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ClientTransport_1.htm" target="">ClientTransport<span id="ID0ECAB6ADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECAB6ADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TBinding<span id="ID0EAAB6ADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAAB6ADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ConstructorAttribute.htm" target="">ConstructorAttribute</a></td><td><div class="summary">
+            Decorates methods that initialize instance of the server class and retain class instance
+             in the server runtime
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_DestructorAttribute.htm" target="">DestructorAttribute</a></td><td><div class="summary">
+            Decorates methods that finalize instance of the server class and release class instance
+             in the server runtime
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_EndPoint.htm" target="">EndPoint</a></td><td><div class="summary">
+            Abstarction of server and client endpoints. And endpoint is a logically-connected entity per: ABC rule - Address/Binding/Contract(s)
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_GlueComponentService.htm" target="">GlueComponentService</a></td><td><div class="summary">
+            Provides base functionality for internal glue component implementations
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_GluedAttribute.htm" target="">GluedAttribute</a></td><td><div class="summary">
+            Decorates interfaces that represent glued contract points
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_GlueException.htm" target="">GlueException</a></td><td><div class="summary">
+            Base exception thrown by the Glue framework
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_InvalidGlueOperationException.htm" target="">InvalidGlueOperationException</a></td><td><div class="summary">
+            Base exception thrown by the Glue framework when some operations are invoked that do not apply
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_LifeCycleAttribute.htm" target="">LifeCycleAttribute</a></td><td><div class="summary">
+            Specifies the instance mode and timeout values for server classes that implement the decorated contract.
+            If server class does not support state then timeout is ignored
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_MessageSizeException.htm" target="">MessageSizeException</a></td><td><div class="summary">
+            Exception thrown in client/server when there's an attempt to send a too large message
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_MsgInspectorConfigurator.htm" target="">MsgInspectorConfigurator</a></td><td><div class="summary">
+            Provides general configuration reading logic for message inspectors
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_NOPGlue.htm" target="">NOPGlue</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_OneWayAttribute.htm" target="">OneWayAttribute</a></td><td><div class="summary">
+            Decorates methods that do not generate response message after execution.
+            They must return void and if exception occurs it is not reported to the caller
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ProtocolException.htm" target="">ProtocolException</a></td><td><div class="summary">
+            Exception thrown when there are protocol-related errors like deserialization,
+            request message received when response is expected
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Provider.htm" target="">Provider</a></td><td><div class="summary">
+            Represents a base type for providers - providers are facades for some
+            low-level implementation that transports use, for example ZeroMQ.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Providers.htm" target="">Providers</a></td><td><div class="summary">
+            A registry of Provider-derived instances
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_RemoteException.htm" target="">RemoteException</a></td><td><div class="summary">
+            Base exception thrown by the Glue framework when remote errors are reported back to caller
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerCallContext.htm" target="">ServerCallContext</a></td><td><div class="summary">
+            Provides access to server call context. Use to access Headers
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerContractException.htm" target="">ServerContractException</a></td><td><div class="summary">
+            Exception thrown when server could not get contract
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerEndPoint.htm" target="">ServerEndPoint</a></td><td><div class="summary">
+            Represents a server endpoint that accepts client requests. This is a sealed class
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerException.htm" target="">ServerException</a></td><td><div class="summary">
+            Exception thrown in Glue server
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerInstanceActivationException.htm" target="">ServerInstanceActivationException</a></td><td><div class="summary">
+            Exception thrown when server instance can not be created
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerMethodInvocationException.htm" target="">ServerMethodInvocationException</a></td><td><div class="summary">
+            Exception thrown when server can not invoke method
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerNotRunningException.htm" target="">ServerNotRunningException</a></td><td><div class="summary">
+            Exception thrown in Glue server when it shuts down/not running
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Servers.htm" target="">Servers</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerTransport.htm" target="">ServerTransport</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ServerTransport_1.htm" target="">ServerTransport<span id="ID0ECABFADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABFADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TBinding<span id="ID0EAABFADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABFADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_StatefulServerInstanceDoesNotExistException.htm" target="">StatefulServerInstanceDoesNotExistException</a></td><td><div class="summary">
+            Exception thrown when statful server identified is not found/has expired/timed-out
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_StatefulServerInstanceLockTimeoutException.htm" target="">StatefulServerInstanceLockTimeoutException</a></td><td><div class="summary">
+            Exception thrown when statful server instance is not thread safe and could not be locked before set timeout expired
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_ThreadSafeAttribute.htm" target="">ThreadSafeAttribute</a></td><td><div class="summary">
+            Indicates that server instance should not be lock()-ed by Glue handler because it is implemented in a thread-safe way.
+            This attribute has no effect for Glue servers that are not [LifeCycle(Stateful)], because they are never locked.
+            Singleton servers must be thread-safe by definition so this attribute is not needed for Singleton servers.
+            If the server is implemented in a thread-safe way, then addition of this attribute may give 15-30% performance boost
+             from Glue runtime when many parallel requests are trying to work with the same instance, however this benefit
+             may be nullified by inefficient user locking code within server implementation. Leaving this attribute out is safer
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Glue_TimeoutReactor.htm" target="">TimeoutReactor</a></td><td><div class="summary">
+            Internal class that polls call slots for timeout
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Glue_Transport.htm" target="">Transport</a></td><td><div class="summary">
+            Transports are thread-safe and are intended for use by multiple threads from ClientCallReactor
+            and ServerProcessor when bindings operate in OperationFlow.Asynchronous mode.
+            Transports are acquired by the thread that creates them
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Glue_Future_1.htm" target="">Future<span id="ID0ECABCACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABCACAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABCACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABCACAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Provides a higher-level wrapper around CallSlot returned value by Glue.
+            All property accessors evaluate synchronously on the calling thread.
+            This struct should not be used with One-Way calls or calls that return void
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Glue_FutureVoid.htm" target="">FutureVoid</a></td><td><div class="summary">
+            Provides a higher-level wrapper around CallSlot returned by Glue.
+            All property accessors evaluate synchronously on the calling thread.
+            This struct should not be used with One-Way calls
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Glue_Node.htm" target="">Node</a></td><td><div class="summary">
+            Represents a network node. It is a binding, logical address of a host and a service that host provides
+            Nodes are not contract-dependent. The componets of address are not case-sensitive.
+            The form of the address is: <div id="ID0EBAAAACAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EBAAAACAAAAA_tabs"></div><div id="ID0EBAAAACAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EBAAAACAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBAAAACAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBAAAACAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBAAAACAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBAAAACAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBAAAACAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBAAAACAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre>binding:<span class="highlight-comment">//host:service</span></pre></div><div id="ID0EBAAAACAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>binding://host:service</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBAAAACAAAAA');</script>. The "host" and "service" segment syntaxes depend on binding and may not contain the ':' char.
+            An example of some 'mytest' binding: 'mytest://adr=1.1.1.1,nic=eth001:job,chat,backup'
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Glue_IClientMsgInspector.htm" target="">IClientMsgInspector</a></td><td><div class="summary">
+            Inspects messages on the client side. ClientInspectors may be registered on ClientEndPoint, Binding or Glue levels
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Glue_IGlue.htm" target="">IGlue</a></td><td><div class="summary">
+            Represents a contract for Glue - a technology that provides asynchronous distributed component interconnection
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Glue_IGlueImplementation.htm" target="">IGlueImplementation</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Glue_IMsgInspector.htm" target="">IMsgInspector</a></td><td><div class="summary">
+            Denotes an entity that can inspect messages
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Glue_IServerMsgInspector.htm" target="">IServerMsgInspector</a></td><td><div class="summary">
+            Inspects messages on the server side. ServerInspectors may be registered on ServerEndPoint, Binding or Glue levels
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_CallStatus.htm" target="">CallStatus</a></td><td><div class="summary">
+            Stipulates codes returned for contract calls
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_DumpDetail.htm" target="">DumpDetail</a></td><td><div class="summary">
+            Message/data dumping detail
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_LogSrc.htm" target="">LogSrc</a></td><td><div class="summary">
+            Logging sources - client, server, any
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_OperationFlow.htm" target="">OperationFlow</a></td><td><div class="summary">
+            Stipulates operation flow kind - sync/async
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_ServerInstanceMode.htm" target="">ServerInstanceMode</a></td><td><div class="summary">
+            Denotes server instance modes - how server instances relate to calls
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Glue_TransportKind.htm" target="">TransportKind</a></td><td><div class="summary">
+            Defines kinds of trasport
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Glue+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

@@ -1,0 +1,172 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>IOMiscUtils Members</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="IOMiscUtils class" /><meta name="System.Keywords" content="IOMiscUtils class, all members" /><meta name="System.Keywords" content="NFX.IOMiscUtils class" /><meta name="Microsoft.Help.Id" content="AllMembers.T:NFX.IOMiscUtils" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX" /><meta name="file" content="AllMembers_T_NFX_IOMiscUtils" /><meta name="guid" content="AllMembers_T_NFX_IOMiscUtils" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">IOMiscUtils Members</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>The <a href="T_NFX_IOMiscUtils.htm" target="">IOMiscUtils</a> type exposes the following members.<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="memberList" class="members"><tr><th class="ps_iconColumn">
+							 
+						</th><th class="ps_nameColumn">Name</th><th class="ps_descriptionColumn">Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_AsCharEnumerable.htm" target="">AsCharEnumerable(Stream)</a></td><td></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_AsCharEnumerable_1.htm" target="">AsCharEnumerable(TextReader)</a></td><td></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_CopyStream.htm" target="">CopyStream</a></td><td><div class="summary">
+            Copies one stream into another using temp buffer
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_EnsureAccessibleDirectory.htm" target="">EnsureAccessibleDirectory</a></td><td><div class="summary">
+            Creates directory and immediately grants it accessibility rules for everyone if it does not exists,
+             or returns the existing directory
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_EnsureDirectoryDeleted.htm" target="">EnsureDirectoryDeleted</a></td><td><div class="summary">
+            Tries to delete the specified directory if it exists BLOCKING for up to the specified interval until directory is PHYSICALLY deleted.
+            Returns true when directory either did not exist in the first place or was successfully deleted (with confirmation).
+            Returns false when directory could not be confirmed to be deleted within the specified timeout, this does not mean
+             that the OS will not delete the directory later, so calling this function in a loop is expected.
+             NOTE: Directory.Delete() does not guarantee that directory is no longer on disk upon its return
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_EnsureFileEventuallyDeleted.htm" target="">EnsureFileEventuallyDeleted</a></td><td><div class="summary">
+            Deleted file if it exists - does not block until file is deleted, the behavior is up to the OS
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_GetURL.htm" target="">GetURL</a></td><td><div class="summary">
+            Fetch the content of a given URL.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_MemBufferEquals.htm" target="">MemBufferEquals</a></td><td><div class="summary">
+            Returns true if both buffers contain the same number of the same bytes.
+            The implementation uses quad-word comparison as much as possible for speed.
+            Requires UNSAFE switch
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_NormalizeCenteredImage.htm" target="">NormalizeCenteredImage</a></td><td><div class="summary">
+            Scales source image so it fits in the desired image size preserving aspect ratio.
+            This function is usable for profile picture size/aspect normalization
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_PackISO3CodeToInt.htm" target="">PackISO3CodeToInt</a></td><td><div class="summary">
+            Represents an ISO code as 4 byte integer filled with
+            up to 3 ASCII chars converted to upper case, the highest byte is free to be used by the application
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEInt32.htm" target="">ReadBEInt32(<span id="ID0EDABZBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABZBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABZBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABZBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at index 0
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEInt32_3.htm" target="">ReadBEInt32(Stream)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEInt32_1.htm" target="">ReadBEInt32(<span id="ID0EFABXBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABXBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABXBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABXBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32<span id="ID0EBABXBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABXBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEInt32_2.htm" target="">ReadBEInt32(<span id="ID0EFABWBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABWBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABWBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABWBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int64<span id="ID0EBABWBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABWBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEShort_1.htm" target="">ReadBEShort(Stream)</a></td><td><div class="summary">
+            Reads a short encoded as big endian from stream
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEShort.htm" target="">ReadBEShort(<span id="ID0EFABUBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABUBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABUBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABUBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32<span id="ID0EBABUBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABUBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads a short encoded as big endian from buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt32.htm" target="">ReadBEUInt32(<span id="ID0EDABTBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABTBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABTBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABTBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>)</a></td><td><div class="summary">
+            Reads an unsigned integer encoded as big endian from buffer at index 0
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt32_1.htm" target="">ReadBEUInt32(<span id="ID0EFABSBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABSBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABSBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABSBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32<span id="ID0EBABSBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABSBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads an unsigned integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt32_2.htm" target="">ReadBEUInt32(<span id="ID0EFABRBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABRBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABRBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABRBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int64<span id="ID0EBABRBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABRBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads an unsigned integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt64_2.htm" target="">ReadBEUInt64(Stream)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt64.htm" target="">ReadBEUInt64(<span id="ID0EDABPBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABPBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABPBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABPBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUInt64_1.htm" target="">ReadBEUInt64(<span id="ID0EFABOBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFABOBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EDABOBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABOBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32<span id="ID0EBABOBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABOBDAAAAA?vb=|cpp=%|cs=|fs=|nu=");
+				</script>)</a></td><td><div class="summary">
+            Reads an integer encoded as big endian from buffer at the specified index
+            and increments the idx by the number of bytes read
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadBEUShort.htm" target="">ReadBEUShort</a></td><td><div class="summary">
+            Reads an ushort encoded as big endian from stream
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_ReadLine.htm" target="">ReadLine</a></td><td><div class="summary">
+            Reads first line from the string
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_UnpackISO3CodeFromInt.htm" target="">UnpackISO3CodeFromInt</a></td><td><div class="summary">
+            Unpacks an ISO code from int which was packed with PackISO3CodeToInt
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEInt32.htm" target="">WriteBEInt32(<span id="ID0EDABKBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABKBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABKBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABKBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32)</a></td><td><div class="summary">
+            Writes an integer encoded as big endian to buffer at index 0
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEInt32_2.htm" target="">WriteBEInt32(Stream, Int32)</a></td><td><div class="summary">
+            Writes an integer encoded as big endian to the given stream
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEInt32_1.htm" target="">WriteBEInt32(<span id="ID0EDABIBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABIBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABIBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABIBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32, Int32)</a></td><td><div class="summary">
+            Writes an integer encoded as big endian to buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEShort_1.htm" target="">WriteBEShort(Stream, Int16)</a></td><td><div class="summary">
+            Writes a short encoded as big endian to the given stream
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEShort.htm" target="">WriteBEShort(<span id="ID0EDABGBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABGBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABGBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABGBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32, Int16)</a></td><td><div class="summary">
+            Writes a short encoded as big endian to buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUInt32_1.htm" target="">WriteBEUInt32(<span id="ID0EDABFBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABFBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABFBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABFBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, UInt32)</a></td><td><div class="summary">
+            Writes an unsigned integer encoded as big endian to buffer at index 0
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUInt32.htm" target="">WriteBEUInt32(<span id="ID0EDABEBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABEBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABEBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABEBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32, UInt32)</a></td><td><div class="summary">
+            Writes an unsigned integer encoded as big endian to buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUInt64_1.htm" target="">WriteBEUInt64(<span id="ID0EDABDBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABDBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABDBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABDBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, UInt64)</a></td><td><div class="summary">
+            Writes an unsigned long integer encoded as big endian to buffer at the beginning
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUInt64_2.htm" target="">WriteBEUInt64(Stream, UInt64)</a></td><td><div class="summary">
+            Writes an unsigned long integer encoded as big endian to the given stream
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUInt64.htm" target="">WriteBEUInt64(<span id="ID0EDABBBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDABBBDAAAAA?vb=|cpp=array&lt;|cs=|fs=|nu=");
+				</script>Byte<span id="ID0EBABBBDAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABBBDAAAAA?vb=()|cpp=&gt;|cs=[]|fs=[]|nu=[]");
+				</script>, Int32, UInt64)</a></td><td><div class="summary">
+            Writes an unsigned long integer encoded as big endian to buffer at the specified index
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_NFX_IOMiscUtils_WriteBEUShort.htm" target="">WriteBEUShort</a></td><td><div class="summary">
+            Writes an ushort encoded as big endian to the given stream
+            </div></td></tr></table><a href="#mainBody" target="">Back to Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Fields</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="memberList" class="members"><tr><th class="ps_iconColumn">
+							 
+						</th><th class="ps_nameColumn">Name</th><th class="ps_descriptionColumn">Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="F_NFX_IOMiscUtils_IO_WAIT_DEFAULT_TIMEOUT.htm" target="">IO_WAIT_DEFAULT_TIMEOUT</a></td><td></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="F_NFX_IOMiscUtils_IO_WAIT_GRANULARITY_MS.htm" target="">IO_WAIT_GRANULARITY_MS</a></td><td></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="F_NFX_IOMiscUtils_IO_WAIT_MIN_TIMEOUT.htm" target="">IO_WAIT_MIN_TIMEOUT</a></td><td></td></tr></table><a href="#mainBody" target="">Back to Top</a><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="T_NFX_IOMiscUtils.htm" target="">IOMiscUtils Class</a></div><div class="seeAlsoStyle"><a href="N_NFX.htm" target="">NFX Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+IOMiscUtils+Members+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

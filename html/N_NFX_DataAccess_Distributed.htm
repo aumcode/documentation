@@ -1,0 +1,134 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.DataAccess.Distributed Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.DataAccess.Distributed namespace" /><meta name="Microsoft.Help.F1" content="NFX.DataAccess.Distributed" /><meta name="Microsoft.Help.Id" content="N:NFX.DataAccess.Distributed" /><meta name="Description" content="Facilitates working with large-scale distributed database systems like the ones used by Google, Facebook, Twitter et. al." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.DataAccess.Distributed" /><meta name="file" content="N_NFX_DataAccess_Distributed" /><meta name="guid" content="N_NFX_DataAccess_Distributed" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.DataAccess.Distributed Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Facilitates working with large-scale distributed database systems like the ones used by Google, Facebook, Twitter et. al.</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_Command.htm" target="">Command</a></td><td><div class="summary">
+            Defines a command sent into an IDistributedDataStore implementor to retrieve or change(if supported) data.
+            A Command is a named bag of paremeters where every parameter has a name and a value.
+            Every command has a unique Identity(GUID) which represents a token of the whole command state (name, type,all params).
+            The identity is used for quick lookup/caching. The identity may be supplied externally as
+            business code may map certain parameters into GUID and later reuse the same GUID to retrieve the cached command result, for example
+             a web server app may cache command "GetPurchases(user=123, year=2015, month=3)" under session key "MY_PURCHASES_201503" to later
+             retrieve a cached (if available) command results from the DB layer, this way the DB server does not have to store the whole
+             commands with all params as the cache key (which would have been slow to compare and would have induced GC pressure).
+             Warning: DO NOT CACHE command identity value on a client (i.e. web page) in an un-encrypted state, as this is a security flaw
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_Command_Param.htm" target="">Command<span id="ID0EBABJADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABJADAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Param</a></td><td><div class="summary">
+            Represents a distributed command parameter
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_DataParcelAttribute.htm" target="">DataParcelAttribute</a></td><td><div class="summary">
+            Decorates Pacel-derivative classes specifying distributed data store options.
+            Unlike the CRUD family of metadata attributes this attributed is NOT TARGETABLE on purpose
+            beacause different sharding definitions would have affected the properties of the parcel which could have been
+            very complex to maintain/account for. So, every parcel has ONLY ONE set opf metadata definition.
+            In case when different parcel definitions needed a new parcel type should be created which can reuse the payload - this is much
+             easier to implement (two parcels) than targeting within the same parcel.
+            Table mappings are targetable
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_DistributedDataAccessException.htm" target="">DistributedDataAccessException</a></td><td><div class="summary">
+            Thrown by distributed data access classes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_DistributedDataParcelSerializationException.htm" target="">DistributedDataParcelSerializationException</a></td><td><div class="summary">
+            Thrown by distributed data access classes when parcel serialization problems happen
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_GDIDRangeComparer.htm" target="">GDIDRangeComparer</a></td><td><div class="summary">
+            Compares GDID regardless of authority. This is useful for range checking, when authorities generating GDIDs in the same
+             range should be disregarded. Use GDIDRangeComparer.Instance.
+             Only relative range comparison can be made.
+             The Equality returned by this comparer can not be relied upon for GDID comparison as it disregards authority.
+             Equality can only be tested for range comparison.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_NullCommandResult.htm" target="">NullCommandResult</a></td><td><div class="summary">
+            Represents a result of command that is absent. This is needed to distinguish from null reference
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_Parcel.htm" target="">Parcel</a></td><td><div class="summary">
+            Describes a data parcel - a piece of logically-grouped data that gets fetched from/comitted into a distributed backend system.
+            Parcels represent an atomic unit of change, a changeset that gets replicated between failover hosts.
+            Every parcel has a Payload property that stores business data of interest that the parcel contains.
+            This class is not thread-safe. Use DeepClone() to create 100% copies for working in multiple threads.
+            This particular class serves as a very base for all Parcel implementations
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_Parcel_1.htm" target="">Parcel<span id="ID0ECABCADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABCADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TPayload<span id="ID0EAABCADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABCADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Describes a data parcel - a piece of logically-grouped data that gets fetched from/comitted into a distributed backend system.
+            Parcels represent an atomic unit of change, a changeset that gets replicated between failover hosts.
+            Every parcel has a Payload property that stores business data of interest that the parcel contains.
+            This class is not thread-safe.
+            This particular class serves as a very base for distributed data store implementations
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_ParcelSealValidationException.htm" target="">ParcelSealValidationException</a></td><td><div class="summary">
+            Thrown by Parcel.Seal() method trying to ensure parcel consistency before it gets sealed
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_Distributed_ParcelValidationException.htm" target="">ParcelValidationException</a></td><td><div class="summary">
+            Thrown by distributed data access classes  to indicate some data validation error
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_Distributed_CachePolicyData.htm" target="">CachePolicyData</a></td><td><div class="summary">
+            Holds data per IParcelCachePolicy contract
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_Distributed_GDID.htm" target="">GDID</a></td><td><div class="summary">
+            Represents a Global Distributed ID key (key field) used in distributed databases that identify entities with a combination of unsigned 32 bit integer
+             'Era' and unsigned 64 bit integer 'ID'. The first 32 bit integer is an 'era' in which the 'ID' (64 bit) was created, consequently
+            a GDID is a 12 byte = 96 bit integer that can hold 2^96 = 79,228,162,514,264,337,593,543,950,336 combinations.
+            The ID consists of two segments: 4 bit authority + 60 bits counter. Authority segment occupies the most significant 4 bits of uint64, so
+             the system may efficiently query the data store to identify the highest stored ID value in a range.
+            Authorities identify one of 16 possible ID generation sources in the global distributed system, therefore ID duplications are not
+            possible between authorities.
+            Within a single era, GDID structure may identify 2^60 = 1,152,921,504,606,846,976(per authority) * 16(authorities) = 2^64 = 18,446,744,073,709,551,616 total combinations.
+            Because of such a large number of combinations supported by GDID.ID alone (having the same Era), some systems may always use Era=0 and only store the ID part
+            (i.e. as UNSIGNED BIGINT in SQL datastores).
+            Note GDID.Zero is never returned by generators as it represents the absence of a value
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_Distributed_GDIDSymbol.htm" target="">GDIDSymbol</a></td><td><div class="summary">
+            Represents a tuple of GDID and its symbolic representation (framework usualy uses an ELink as symbolic representation).
+            This struct is needed to pass GDID along with its ELink representation together.
+            Keep in mind that string poses a GC load, so this stuct is not suitable for beiing used as a pile cache key
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_Distributed_ShardingPointer.htm" target="">ShardingPointer</a></td><td><div class="summary">
+            Contains information about sharding parcel type and ID
+            which is used to calculate the physical location of parcel data
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_Distributed_TargetTableMapping.htm" target="">TargetTableMapping</a></td><td><div class="summary">
+            Provides information about targetname-&gt;table name, sequence name(and possibly other) mappings
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IArea.htm" target="">IArea</a></td><td><div class="summary">
+            Provides information about an area of a bank schema. This information does not depend on a particular bank instance,
+             as it is common for all banks that implement the same schema.
+            Area provides configuration information for parcels that it can store.
+            Every instance of this (interface-implementer) class has a corresponding IAreaInstance instance that stores information
+             for every particular bank, i.e. what distribution policies are applied (such as sharding) to the parcels stored in this area
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IAreaInstance.htm" target="">IAreaInstance</a></td><td><div class="summary">
+            Represents data for a concrete instance of schema area within banks, this depends on a concrete bank instance (unlike it's complementary part IArea)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IBank.htm" target="">IBank</a></td><td><div class="summary">
+            Provides abstraction for Global Database Bank instance
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_ICachePolicy.htm" target="">ICachePolicy</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IDistributedDataStore.htm" target="">IDistributedDataStore</a></td><td><div class="summary">
+             Represents a data store that works with large distributed systems that support OLTP-style processing
+             and provide data querying, caching, partitioning/sharding, failover and replication.
+             These systems are designed to handle billions of rows that need to be accessed by millions of active concurrent users,
+              so the design is specific to this model that scales horizontally. There is no need to use this technology for medium and smaller data stores
+              as it imposes specific requirements on how application is written/interacts with the backend system. This technology is based on the idea
+              of Parcels - an atomic unit of data change. Parcels get replicated between hosts for failover and performance reasons.
+             Note:
+              NFX library does not provide the implementation for this technology, only marker interfaces so developers can plan for distributed backends
+              in future
+             </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IDistributedDataStoreImplementation.htm" target="">IDistributedDataStoreImplementation</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IDistributedStableHashProvider.htm" target="">IDistributedStableHashProvider</a></td><td><div class="summary">
+            Denotes entities that provide ULONG STABLE hash code for use in a distributed (large scale) system.
+            This is needed primarily for cluster/large datasets to properly compute 64bit sharding addresses and to differentiate
+            from GetHashCode() that returns 32 bits unstable hash for local object location in hashtables.
+            DO not confuse with object.GetHashCode() which is un-suitable for long-term persistence
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IReplicatable.htm" target="">IReplicatable</a></td><td><div class="summary">
+            Denotes a distributed entity that can be replicated to a different location/site/instance.
+            Normally only Parcel and its derivatives should implement this interface
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IReplicationVersionInfo.htm" target="">IReplicationVersionInfo</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_ISchema.htm" target="">ISchema</a></td><td><div class="summary">
+            Provides information about schema of data store banks. Schema defines areas of the bank, where every area
+             defines what parcel types can be stored. Each bank implements only one bank schema
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_Distributed_IShardingPointerProvider.htm" target="">IShardingPointerProvider</a></td><td><div class="summary">
+            Denotes an entity which provides a sharding parcel type along with sharding ID (ShardingPointer) that can be used to determine
+            data location via conversion of this id into physical shard #(particular server) that this entity represents
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_Distributed_DataCaching.htm" target="">DataCaching</a></td><td><div class="summary">
+            Stipulates where data gets cached
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_Distributed_DataVeracity.htm" target="">DataVeracity</a></td><td><div class="summary">
+            Stipulates levels of data fidality, the higher the level - the more accurately verified data is provided
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_Distributed_ParcelState.htm" target="">ParcelState</a></td><td><div class="summary">
+            Represents data parcel states - creating, modifying, sealed
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.DataAccess.Distributed+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

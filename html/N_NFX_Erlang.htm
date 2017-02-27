@@ -1,0 +1,147 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Erlang Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Erlang namespace" /><meta name="Microsoft.Help.F1" content="NFX.Erlang" /><meta name="Microsoft.Help.Id" content="N:NFX.Erlang" /><meta name="Description" content="Natively provides Erlang types/terms/parsing and OTP support" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Erlang" /><meta name="file" content="N_NFX_Erlang" /><meta name="guid" content="N_NFX_Erlang" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Erlang Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Natively provides Erlang types/terms/parsing and OTP support</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Erlang_AtomTable.htm" target="">AtomTable</a></td><td><div class="summary">
+             Non-garbage collected hash table for atoms.
+            
+             It stores strings as atoms so that atoms can be quickly compared to
+             with O(1) complexity.  The instance of this table is statically maintained
+             and its content is never cleared.  The table contains a unique
+             list of strings represented as atoms added throughout the lifetime
+             of the application.
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ConstAtoms.htm" target="">ConstAtoms</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlAbstractConnection.htm" target="">ErlAbstractConnection</a></td><td><div class="summary">
+             Maintains a connection between a C# process and a remote Erlang,
+             C# or C node. The object maintains connection state and allows
+             data to be sent to and received from the peer
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlAbstractNode.htm" target="">ErlAbstractNode</a></td><td><div class="summary">
+             Represents an OTP node
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlApp.htm" target="">ErlApp</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlAuthException.htm" target="">ErlAuthException</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlBadDataException.htm" target="">ErlBadDataException</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlConnection.htm" target="">ErlConnection</a></td><td><div class="summary">
+            Maintains a connection between a C# process and a remote
+            Erlang, C# or C node. The object maintains connection state and
+            allows data to be sent to and received from the peer
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlConnectionException.htm" target="">ErlConnectionException</a></td><td><div class="summary">
+            Exception thrown when the connection with a given node gets broken
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlConsts.htm" target="">ErlConsts</a></td><td><div class="summary">
+            Provides non-localizable Erlang constants
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Erlang_ErlDown.htm" target="">ErlDown</a></td><td><div class="summary">
+            Message sent when the monitored Pid dies
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Erlang_ErlEpmd.htm" target="">ErlEpmd</a></td><td><div class="summary">
+             Provides methods for registering, unregistering and looking up
+             nodes with the Erlang portmapper daemon (Epmd). For each registered
+             node, Epmd maintains information about the port on which incoming
+             connections are accepted, as well as which versions of the Erlang
+             communication protocolt the node supports
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlException.htm" target="">ErlException</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Erlang_ErlExit.htm" target="">ErlExit</a></td><td><div class="summary">
+            Special message sent when a linked pid dies
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlIncompatibleTypesException.htm" target="">ErlIncompatibleTypesException</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlInputStream.htm" target="">ErlInputStream</a></td><td><div class="summary">
+            Provides a stream for decoding Erlang terms from external format
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlLinks.htm" target="">ErlLinks</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlList.htm" target="">ErlList</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlLocalNode.htm" target="">ErlLocalNode</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlMbox.htm" target="">ErlMbox</a></td><td><div class="summary">
+             Provides a simple mechanism for exchanging messages with Erlang
+             processes or other instances of this class
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlMsg.htm" target="">ErlMsg</a></td><td><div class="summary">
+             Provides a distributed carrier for Erlang messages
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlObject.htm" target="">ErlObject</a></td><td><div class="summary">
+            Class defines extension methods on types implementing IErlObject interface
+            and static methods dealing with IErlObject
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlOutputStream.htm" target="">ErlOutputStream</a></td><td><div class="summary">
+            Provides a stream for encoding Erlang terms to external format for
+            transmission or storage
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlPasswordSession.htm" target="">ErlPasswordSession</a></td><td><div class="summary">
+            Keeps password for node and user
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlPatternMatcher.htm" target="">ErlPatternMatcher</a></td><td><div class="summary">
+            Pattern matcher that implements a container of patterns to be
+            matched against a given Erlang term.  On successful match, the
+            corresponding func registered with that pattern gets invoked
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlRemoteNode.htm" target="">ErlRemoteNode</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTcpTransport.htm" target="">ErlTcpTransport</a></td><td><div class="summary">
+            TCP transport
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTrace.htm" target="">ErlTrace</a></td><td><div class="summary">
+            Special class used for passing tracing information in Erlang distributed
+            messages SEND_TT, EXIT_TT, REG_SEND_TT, EXIT2_TT
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTransportFactory.htm" target="">ErlTransportFactory</a></td><td><div class="summary">
+            Factory of IErlTransport
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTransportPasswordSource.htm" target="">ErlTransportPasswordSource</a></td><td><div class="summary">
+            Source of passwrod for transport (i.e. for SSH connection)
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTuple.htm" target="">ErlTuple</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlTupleBase.htm" target="">ErlTupleBase</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_ErlVarBind.htm" target="">ErlVarBind</a></td><td><div class="summary">
+            Dictionary of variables bound to terms
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Erlang_NotEnoughDataException.htm" target="">NotEnoughDataException</a></td><td><div class="summary">
+            Exception thrown when decoding an Erlang term if there's not enough
+            data in the buffer to construct the term
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Erlang_StringConsts.htm" target="">StringConsts</a></td><td><div class="summary">
+            A dictionary of framework text messages.
+            Localization may be done in this class in future
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlAtom.htm" target="">ErlAtom</a></td><td></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlBinary.htm" target="">ErlBinary</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlBoolean.htm" target="">ErlBoolean</a></td><td><div class="summary">
+            Provides a C# representation of Erlang floats and doubles. Erlang
+            defines only one floating point numeric type
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlByte.htm" target="">ErlByte</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlDouble.htm" target="">ErlDouble</a></td><td><div class="summary">
+            Provides a C# representation of Erlang floats and doubles. Erlang
+            defines only one floating point numeric type
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlLink.htm" target="">ErlLink</a></td><td></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlLong.htm" target="">ErlLong</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlPatternMatcher_Pattern.htm" target="">ErlPatternMatcher<span id="ID0EBABFADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABFADAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Pattern</a></td><td></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlPid.htm" target="">ErlPid</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlPort.htm" target="">ErlPort</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlRef.htm" target="">ErlRef</a></td><td><div class="summary">
+            Provides a C# representation of Erlang integer types
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlString.htm" target="">ErlString</a></td><td></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Erlang_ErlVar.htm" target="">ErlVar</a></td><td><div class="summary">
+            Provides a C# representation of an Erlang variable
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Erlang_IErlObject.htm" target="">IErlObject</a></td><td><div class="summary">
+            All Erlang terms implement this interface
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Erlang_IErlObject_1.htm" target="">IErlObject<span id="ID0ECABCACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABCACAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>T<span id="ID0EAABCACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABCACAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Erlang_IErlTransport.htm" target="">IErlTransport</a></td><td><div class="summary">
+            General interface of TCP transports (i.e. usual TCP channel or SSH tunneled TCP channel)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Erlang_IQueable.htm" target="">IQueable</a></td><td><div class="summary">
+            Represents a interface that messages enqueued to ErlMbox must support
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Delegates</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Delegate</th><th class="ps_descriptionColumn">Description</th></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_ConnAttemptEventHandler.htm" target="">ConnAttemptEventHandler</a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_EpmdFailedConnAttemptEventHandler.htm" target="">EpmdFailedConnAttemptEventHandler</a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_ErlPasswordRequiredEventHandler.htm" target="">ErlPasswordRequiredEventHandler</a></td><td><div class="summary">
+            Delegate is called when SSH tunnel requires password for authentication
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_IoOutputEventHandler.htm" target="">IoOutputEventHandler</a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_MailboxMsgEventHandler.htm" target="">MailboxMsgEventHandler</a></td><td><div class="summary">
+            Indicates arrival of a message to a given mailbox.
+            The msg is of type ErlMsg, ErlExit, ErlDown, or ErlException.
+            <h4 class="subHeading">Return Value</h4>Type: <br />
+            If returns true, the message is handled, and will not be put in the mailbox's queue.
+            Otherwise, the message will be enqueued in the mailbox's queue.
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_NodeStatusChangeEventHandler.htm" target="">NodeStatusChangeEventHandler</a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_PatternMatchFunc.htm" target="">PatternMatchFunc</a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_PatternMatchFunc_1.htm" target="">PatternMatchFunc<span id="ID0ECABDABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABDABAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TContext<span id="ID0EAABDABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABDABAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_ReadWriteEventHandler.htm" target="">ReadWriteEventHandler</a></td><td><div class="summary">
+            Delegate called on read/write from socket
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_TraceEventHandler.htm" target="">TraceEventHandler</a></td><td><div class="summary">
+            Debugging delegate called to be able to record transport-related events
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Erlang_UnhandledMsgEventHandler.htm" target="">UnhandledMsgEventHandler</a></td><td></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Erlang_Direction.htm" target="">Direction</a></td><td></td></tr><tr data="enumeration; public"><td><img src="./../icons/protenumeration.gif" alt="Protected enumeration" title="Protected enumeration" /></td><td><a href="T_NFX_Erlang_ErlAbstractNode_NodeCompatibility.htm" target="">ErlAbstractNode<span id="ID0EBABFAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABFAAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>NodeCompatibility</a></td><td></td></tr><tr data="enumeration; public"><td><img src="./../icons/protenumeration.gif" alt="Protected enumeration" title="Protected enumeration" /></td><td><a href="T_NFX_Erlang_ErlAbstractNode_NodeType.htm" target="">ErlAbstractNode<span id="ID0EBABEAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABEAAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>NodeType</a></td><td></td></tr><tr data="enumeration; public"><td><img src="./../icons/protenumeration.gif" alt="Protected enumeration" title="Protected enumeration" /></td><td><a href="T_NFX_Erlang_ErlExternalTag.htm" target="">ErlExternalTag</a></td><td><div class="summary">
+            Tags used for external format serialization
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Erlang_ErlMsg_Tag.htm" target="">ErlMsg<span id="ID0EBABCAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABCAAAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Tag</a></td><td><div class="summary">
+            Erlang message header tags
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Erlang_ErlTraceLevel.htm" target="">ErlTraceLevel</a></td><td></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Erlang_ErlTypeOrder.htm" target="">ErlTypeOrder</a></td><td><div class="summary">
+            Defines ordering semantics for Erlang types
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Erlang+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

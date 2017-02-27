@@ -1,0 +1,62 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.IO Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.IO namespace" /><meta name="Microsoft.Help.F1" content="NFX.IO" /><meta name="Microsoft.Help.Id" content="N:NFX.IO" /><meta name="Description" content="Provides various IO-related functions like error correction and efficient binary streamers" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.IO" /><meta name="file" content="N_NFX_IO" /><meta name="guid" content="N_NFX_IO" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.IO Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides various IO-related functions like error correction and efficient binary streamers</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_BufferSegmentReadingStream.htm" target="">BufferSegmentReadingStream</a></td><td><div class="summary">
+            Implements a read-only stream wrapper around a segment of byte[].
+            Unlike MemoryStream, this class allows for use of long indexes and reuse the same stream instance with different byte[].
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_ConsoleUtils.htm" target="">ConsoleUtils</a></td><td><div class="summary">
+            Provides various console-helper utilities
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_LEB128.htm" target="">LEB128</a></td><td><div class="summary">
+            Facilitates int64/uint64 LEB128 encode/decode
+            See https://en.wikipedia.org/wiki/LEB128
+            See http://llvm.org/docs/doxygen/html/LEB128_8h_source.html
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_NFXIOException.htm" target="">NFXIOException</a></td><td><div class="summary">
+            Base exception thrown by the IO-related classes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_NonClosingStreamWrap.htm" target="">NonClosingStreamWrap</a></td><td><div class="summary">
+            Implements a stream wrapper that does not close/get disposed.
+            This stream is needed for TextWriter defect that always closes stream in its destructor
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_ReadingStreamer.htm" target="">ReadingStreamer</a></td><td><div class="summary">
+            Reads primitives from stream
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_SlimFormat.htm" target="">SlimFormat</a></td><td><div class="summary">
+            A format that writes into binary files in an efficient way using variable-length integers, strings and meta handles.
+            Developers may derive new formats that support custom serialization of their business-related types. This may increase performance dramatically.
+            For example, in a drawing application a new format may derive from SlimFormat to natively serialize Point and PolarPoint structs to yield faster serialization times.
+            NFX.Serialization.Slim.SlimSlimSerializer is capable of SlimFormat-derived format injection, in which case it will automatically discover new types that are directly supported
+            by the format.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_SlimReader.htm" target="">SlimReader</a></td><td><div class="summary">
+            Reads primitives and other supported types from Slim-format stream. Use factory method of SlimFormat instance to create a new instance of SlimReader class
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_SlimWriter.htm" target="">SlimWriter</a></td><td><div class="summary">
+            Writes primitives and other supported types to Slim-format stream. Use factory method of SlimFormat instance to create a new instance of SlimWriter class
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_Streamer.htm" target="">Streamer</a></td><td><div class="summary">
+            Represents a base for stream readers and writers.
+            Streamer object instances ARE NOT THREAD-safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_StreamerFormat.htm" target="">StreamerFormat</a></td><td><div class="summary">
+            Describes a format - apair of readers/writers along with their capabilities - what types format supports natively
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_StreamerFormat_2.htm" target="">StreamerFormat<span id="ID0ECABBABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABBABAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TReader, TWriter<span id="ID0EAABBABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABBABAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Describes a format - apair of readers/writers along with their capabilities.
+            Developers may derive new formats that support custom serialization schemes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_IO_WritingStreamer.htm" target="">WritingStreamer</a></td><td><div class="summary">
+            Writes primitives to stream
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_IO_MetaHandle.htm" target="">MetaHandle</a></td><td><div class="summary">
+            Represents a tuple of an unsigned integer with optional int or string metadata. If metadata is null then integer is stored by itself in an efficient way.
+            The type is useful for storage of handles/indexes (such as pointer surrogates) with optional description of pointed-to data (such as type information).
+            A special case is reserved for strings which are immutable yet reference types, in which case a special handle INLINED_STRING_HANDLE is set to indicate that
+             "Metadata" really contains string data that this handle should resolve into. Check "IsInlinedString" property to see if string was inlined.
+            Check "IsInlinedValueType" is set to true when a struct/valuetype is inlined and "Metadata" contains type spec
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_IO_VarIntStr.htm" target="">VarIntStr</a></td><td><div class="summary">
+            Holds either an integer or a string value.
+            This is useful for metadata, i.e. types, if type is known an integer is sent, otherwise a full type name is sent
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.IO+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

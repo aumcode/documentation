@@ -1,0 +1,101 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Instrumentation.Analytics Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Instrumentation.Analytics namespace" /><meta name="Microsoft.Help.F1" content="NFX.Instrumentation.Analytics" /><meta name="Microsoft.Help.Id" content="N:NFX.Instrumentation.Analytics" /><meta name="Description" content="Provides instrumentation-related classes that facilitate analytical processing - various histograms" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Instrumentation.Analytics" /><meta name="file" content="N_NFX_Instrumentation_Analytics" /><meta name="guid" content="N_NFX_Instrumentation_Analytics" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Instrumentation.Analytics Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides instrumentation-related classes that facilitate analytical processing - various histograms</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Dimension.htm" target="">Dimension</a></td><td><div class="summary">
+            Base class of a histogram dimension.
+            of data type TData partitions a range defined by MinValue and MaxValue,
+            by mapping the given value into [0 ... PartitionCount] partitions
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Dimension_1.htm" target="">Dimension<span id="ID0ECABLADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABLADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData<span id="ID0EAABLADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABLADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            A dimension of data type TData partitions a range of values
+            by mapping the given value into [0 ... PartitionCount] partitions
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_HistData.htm" target="">HistData</a></td><td><div class="summary">
+            Helper type representing a dictionary for storing historam data
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Histogram.htm" target="">Histogram</a></td><td><div class="summary">
+            Base histogram to be used by typed histogram generic derived classes.
+            The histogram holds a dictionary of integer counts for each measurement
+            keys (with number of keys correspondent to the number of dimensions
+            in the histogram).
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Histogram_1.htm" target="">Histogram<span id="ID0ECABIADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABIADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData1<span id="ID0EAABIADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABIADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            One-dimensional histogram for storing number of samples for a given
+            dimension key
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Histogram_2.htm" target="">Histogram<span id="ID0ECABHADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABHADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData1, TData2<span id="ID0EAABHADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABHADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Two-dimensional histogram for storing number of samples for given
+            dimension keys
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_Histogram_3.htm" target="">Histogram<span id="ID0ECABGADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABGADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData1, TData2, TData3<span id="ID0EAABGADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABGADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Three-dimensional histogram for storing number of samples for given
+            dimension keys
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_HistogramEntry.htm" target="">HistogramEntry</a></td><td><div class="summary">
+            The placeholder of histogram data that represents a sample count
+            for a given set of histogram keys.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_HistogramReporters.htm" target="">HistogramReporters</a></td><td><div class="summary">
+            Maps histogram data into some other representation (such as text, HTML, etc)
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_TimeDimension.htm" target="">TimeDimension</a></td><td><div class="summary">
+            A dimension of data type double partitions a range of values
+            by mapping the given value into [0 ... PartitionCount] partitions.
+            This is a helper class for creating a dimension of TimeHistogram
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_TimeHistogram.htm" target="">TimeHistogram</a></td><td><div class="summary">
+            Time measurement 1D histogram aggregates measurements in fractions of a second
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_TimeHistogram_1.htm" target="">TimeHistogram<span id="ID0ECABBADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABBADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData2<span id="ID0EAABBADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABBADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Time measurement 2D histogram aggregates measurements in fractions of a second
+            for a given 1st dimension key.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Analytics_TimeHistogram_2.htm" target="">TimeHistogram<span id="ID0ECABAADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABAADAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData2, TData3<span id="ID0EAABAADAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABAADAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Time measurement 3D histogram aggregates measurements in fractions of a second
+            for a given 1st and 2nd dimension keys.
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Instrumentation_Analytics_HistogramKeys.htm" target="">HistogramKeys</a></td><td><div class="summary">
+            Represents histogram dimension key vector.
+            This class is introduced for performance enhancement vs int[] approach
+            that would have allocated extra object on heap per call
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/protstructure.gif" alt="Protected structure" title="Protected structure" /></td><td><a href="T_NFX_Instrumentation_Analytics_TimeHistogramHelper.htm" target="">TimeHistogramHelper</a></td><td><div class="summary">
+            Helper class used by TimerHistogram
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_Analytics_IHistogram.htm" target="">IHistogram</a></td><td><div class="summary">
+            Basic histogram interface to be implemented by all types of
+            instrumentation histograms
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_Analytics_ITimeHistogram.htm" target="">ITimeHistogram</a></td><td><div class="summary">
+            Histogram for measuring latency
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Delegates</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Delegate</th><th class="ps_descriptionColumn">Description</th></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Instrumentation_Analytics_PartitionFunc_1.htm" target="">PartitionFunc<span id="ID0ECABBAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABBAAAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TData<span id="ID0EAABBAAAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABBAAAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            References a function that maps input value into a partition index
+            in the context of a given Partitioner
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Instrumentation_Analytics_PartitionNameFunc.htm" target="">PartitionNameFunc</a></td><td><div class="summary">
+            Returns a partition name for a given partition index
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Instrumentation.Analytics+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

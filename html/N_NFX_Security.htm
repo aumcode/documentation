@@ -1,0 +1,98 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Security Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Security namespace" /><meta name="Microsoft.Help.F1" content="NFX.Security" /><meta name="Microsoft.Help.Id" content="N:NFX.Security" /><meta name="Description" content="Defines fundamental security types like users and permissions" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Security" /><meta name="file" content="N_NFX_Security" /><meta name="guid" content="N_NFX_Security" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Security Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Defines fundamental security types like users and permissions</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_AccessLevel.htm" target="">AccessLevel</a></td><td><div class="summary">
+            A level of access granted to user for certain permission, i.e. if (level.Denied).....
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_AdHocPermission.htm" target="">AdHocPermission</a></td><td><div class="summary">
+            Represents a permission check instance which is a-typical and is based on string arguments
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_AuthorizationException.htm" target="">AuthorizationException</a></td><td><div class="summary">
+            Base exception thrown by the security framework
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_BlankCredentials.htm" target="">BlankCredentials</a></td><td><div class="summary">
+            Represents credentials that are absent. This is a singleton class
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_ConfigSecurityManager.htm" target="">ConfigSecurityManager</a></td><td><div class="summary">
+            Provides security manager implementation that authenticates and authorizes users from configuration
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_Credentials.htm" target="">Credentials</a></td><td><div class="summary">
+            User credentials base class. A credentials may be as simple as user+password, access card codes, door key, Twitter account token etc...
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_DefaultPasswordManager.htm" target="">DefaultPasswordManager</a></td><td><div class="summary">
+            Provides default implementation for password managment functionality based on injectable algorithms and default password strength calculation
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_GDIDCredentials.htm" target="">GDIDCredentials</a></td><td><div class="summary">
+            Represents credentials based on Global Distributed ID
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_HashedPassword.htm" target="">HashedPassword</a></td><td><div class="summary">
+            Represents abstraction of a hashed password, the concreate password algorithm provide implementation (i.e. bytebuffer, dictionary, string)
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_IDPasswordCredentials.htm" target="">IDPasswordCredentials</a></td><td><div class="summary">
+            Represents simple ID/password textual credentials.
+            Note: The password is stored as plain text
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_MD5PasswordHashingAlgorithm.htm" target="">MD5PasswordHashingAlgorithm</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_NOPSecurityManager.htm" target="">NOPSecurityManager</a></td><td><div class="summary">
+            Provides security manager implementation that does nothing and always returns fake user instance
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_PasswordHashingAlgorithm.htm" target="">PasswordHashingAlgorithm</a></td><td><div class="summary">
+            Represents an abstraction of password algorithm that performs hashing and verification of passwords supplied as SecureBuffer
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_PasswordHashingAlgorithm_1.htm" target="">PasswordHashingAlgorithm<span id="ID0ECABIAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABIAEAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TOptions<span id="ID0EAABIAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABIAEAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_PasswordRepresentation.htm" target="">PasswordRepresentation</a></td><td><div class="summary">
+            Provides password representation content, i.e. an image with drawn password which is understandable by humans
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_Permission.htm" target="">Permission</a></td><td><div class="summary">
+             Represents a general permission abstraction - where permission type represents the path/name of the permission
+              in User's rights and .ctor takes specific parameters to check while authorizing user.
+              Permission-derived class represents a certain permission type, whereas its instance is a check for particular desired level.
+              To authorize certain actions, one creates an instance of Permission-derived class passing in its .ctor required
+               access levels, then calls a Check() method that returns true if action is authorized.
+            
+             This scheme provides a great deal of flexibility, i.e. for very complex security cases developers may inherit leaf-level permissions from intermediate ones
+               that have logic tied to session-level variables, this way user's access may vary by permission/session state, i.e. a user may have
+                "Patient.Master" level 4 access in database "A", while having acess denied to the same named permission in database "B".
+             User's database, or system instance is a flag in user-session context
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_Rights.htm" target="">Rights</a></td><td><div class="summary">
+            User rights contains data about access levels to permissions in the system.
+            Use Configuration internally to keep the data organized in hierarchical navigable structure.
+            Configuration also allows to cross-link permission levels using vars and make acess level
+             dependent on settings on a particular machine using environmental vars
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_SecureBuffer.htm" target="">SecureBuffer</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_SecurityException.htm" target="">SecurityException</a></td><td><div class="summary">
+            Base exception thrown by the Security framework
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_SocialNetTokenCredentials.htm" target="">SocialNetTokenCredentials</a></td><td><div class="summary">
+            Represents credentials supplied from/to Social Net site (i.e. Facebook, Twitter etc.)
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_TypedPermission.htm" target="">TypedPermission</a></td><td><div class="summary">
+            A general ancestor for all typed permissions - the ones declared in code
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Security_User.htm" target="">User</a></td><td><div class="summary">
+            Provides base user functionality. Particular security manager implementations may return users derived from this class
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Security_AuthenticationToken.htm" target="">AuthenticationToken</a></td><td><div class="summary">
+            Represents security provider-internal ID that SecurityManager assigns into User object on authentication.
+            These tokens can be used in place of Credentials to re-authenticate users or to requery user rights.
+            External parties should never be supplied with this struct as it is backend-internal
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Security_MD5PasswordHashingOptions.htm" target="">MD5PasswordHashingOptions</a></td><td></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_IPasswordHashingOptions.htm" target="">IPasswordHashingOptions</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_IPasswordManager.htm" target="">IPasswordManager</a></td><td><div class="summary">
+            Denoutes an entity that manages passwords such as: computes and verified hash tokens
+            and provides password strength verification
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_IPasswordManagerImplementation.htm" target="">IPasswordManagerImplementation</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_ISecurityException.htm" target="">ISecurityException</a></td><td><div class="summary">
+            Marker interface for security exceptions
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_ISecurityManager.htm" target="">ISecurityManager</a></td><td><div class="summary">
+            Represents an entity that performs user authentication based on passed credentials and other security-related global tasks
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_ISecurityManagerImplementation.htm" target="">ISecurityManagerImplementation</a></td><td><div class="summary">
+            Represents an implementation of an entity that performs user authentication based on passed credentials and other security-related global tasks
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Security_IStringRepresentableCredentials.htm" target="">IStringRepresentableCredentials</a></td><td><div class="summary">
+            Denotes credentials that can be represented as a string that can be used for example in Authorization header
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Delegates</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Delegate</th><th class="ps_descriptionColumn">Description</th></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_Security_GetSessionFunc.htm" target="">GetSessionFunc</a></td><td><div class="summary">
+            Invoked by permission checker to get session
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Security_PasswordFamily.htm" target="">PasswordFamily</a></td><td><div class="summary">
+            Denoutes kinds of passwords i.e.: text that user types on login, short PIN,
+            geometrical curve that users need to trace with their finger, select areas of picture
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Security_PasswordRepresentationType.htm" target="">PasswordRepresentationType</a></td><td><div class="summary">
+            Flags denote types of password representation: Text/Image/Audio
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Security_PasswordStrengthLevel.htm" target="">PasswordStrengthLevel</a></td><td></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_Security_UserStatus.htm" target="">UserStatus</a></td><td><div class="summary">
+            User status enumeration -  super-permission levels
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Security+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

@@ -1,0 +1,105 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Instrumentation Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Instrumentation namespace" /><meta name="Microsoft.Help.F1" content="NFX.Instrumentation" /><meta name="Microsoft.Help.Id" content="N:NFX.Instrumentation" /><meta name="Description" content="Provides base types for Instrumentation: gauges, events, providers" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Instrumentation" /><meta name="file" content="N_NFX_Instrumentation" /><meta name="guid" content="N_NFX_Instrumentation" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Instrumentation Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides base types for Instrumentation: gauges, events, providers</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_AmountGauge.htm" target="">AmountGauge</a></td><td><div class="summary">
+            Represents a general-purpose financial Amount measurement datum
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Datum.htm" target="">Datum</a></td><td><div class="summary">
+            Base class for single measurement events (datums) reported to instrumentation
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Instrumentation_DatumBag.htm" target="">DatumBag</a></td><td><div class="summary">
+            Internal concurrent bag used for instrumentation data aggregation
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_DecimalGauge.htm" target="">DecimalGauge</a></td><td><div class="summary">
+            Represents a general-purpose decimal measurement datum
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_DoubleGauge.htm" target="">DoubleGauge</a></td><td><div class="summary">
+            Represents a general-purpose double measurement datum
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Event.htm" target="">Event</a></td><td><div class="summary">
+            Represents a base for events that happen so instrumentation can calculate event counts and rates of occurence
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_ExceptionEvent.htm" target="">ExceptionEvent</a></td><td><div class="summary">
+            Represents an exception event recorded by instrumentation
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_Gauge.htm" target="">Gauge</a></td><td><div class="summary">
+            Represents a base for gauges - events of measurement of some values
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_InstrumentationProvider.htm" target="">InstrumentationProvider</a></td><td><div class="summary">
+            Defines a base provider for InstrumentationService
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_InstrumentationService.htm" target="">InstrumentationService</a></td><td><div class="summary">
+            Implements IInstrumentation. This service aggregates data by type,source and sends result into provider
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_InstrumentViewGroup.htm" target="">InstrumentViewGroup</a></td><td><div class="summary">
+            Denotes interface types that participate in instrumentation data grouping.
+            Records that implement several classification interfaces which are decorated by this attribute
+            get listed in each decorated interface/group
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_LogInstrumentationProvider.htm" target="">LogInstrumentationProvider</a></td><td><div class="summary">
+            Represents a provider that writes aggregated datums to log
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_LongGauge.htm" target="">LongGauge</a></td><td><div class="summary">
+            Represents a general-purpose long integer measurement datum
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_NOPInstrumentation.htm" target="">NOPInstrumentation</a></td><td><div class="summary">
+            Provides IInstrumentation implementation that does nothing
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Instrumentation_NOPInstrumentationProvider.htm" target="">NOPInstrumentationProvider</a></td><td><div class="summary">
+            Represents a provider that does nothing
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Instrumentation_SrcBucketedData.htm" target="">SrcBucketedData</a></td><td><div class="summary">
+            Internal concurrent dictionary used for instrumentation data aggregation
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_Instrumentation_TypeBucketedData.htm" target="">TypeBucketedData</a></td><td><div class="summary">
+            Internal concurrent dictionary used for instrumentation data aggregation
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IBusinessLogic.htm" target="">IBusinessLogic</a></td><td><div class="summary">
+            A class of operations related to business logic that instrument measures
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ICacheInstrument.htm" target="">ICacheInstrument</a></td><td><div class="summary">
+            Cache-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ICatastropyInstrument.htm" target="">ICatastropyInstrument</a></td><td><div class="summary">
+            Data of this class indicates an abnormality that will most likely lead to system inability to continue functioning as expected
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ICPUInstrument.htm" target="">ICPUInstrument</a></td><td><div class="summary">
+            CPU-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IDatabaseInstrument.htm" target="">IDatabaseInstrument</a></td><td><div class="summary">
+            DB-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IDiskInstrument.htm" target="">IDiskInstrument</a></td><td><div class="summary">
+            Disk operations (i.e. % drive free)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IErrorInstrument.htm" target="">IErrorInstrument</a></td><td><div class="summary">
+            Data of this class indicates a definite abnormality, however the system is going to continue functioning
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IFinancialLogic.htm" target="">IFinancialLogic</a></td><td><div class="summary">
+            A class of operations related to financial transactions / business logic
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IGDIDInstrument.htm" target="">IGDIDInstrument</a></td><td><div class="summary">
+            GDID-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IInstrumentable.htm" target="">IInstrumentable</a></td><td><div class="summary">
+            Denotes an entity that can be instrumented
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IInstrumentation.htm" target="">IInstrumentation</a></td><td><div class="summary">
+            Stipulates instrumentation contract
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IInstrumentationImplementation.htm" target="">IInstrumentationImplementation</a></td><td><div class="summary">
+            Stipulates instrumentation contract
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IInstrumentationInstrument.htm" target="">IInstrumentationInstrument</a></td><td><div class="summary">
+            Instruments that measure instrumentation itself
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IInstrumentClass.htm" target="">IInstrumentClass</a></td><td><div class="summary">
+            Root marker interface for instrumentation data classification.
+            Instruments are primarily classified by their derivation from Datum ancestor, however this interface-based
+             scheme allows for alternate classification (a la multiple inheritance)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IIOInstrumentClass.htm" target="">IIOInstrumentClass</a></td><td><div class="summary">
+            IO-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ILockingInstrument.htm" target="">ILockingInstrument</a></td><td><div class="summary">
+            Locking/coordination-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IMemoryInstrument.htm" target="">IMemoryInstrument</a></td><td><div class="summary">
+            Memory-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_INetInstrument.htm" target="">INetInstrument</a></td><td><div class="summary">
+            Network operations (i.e. sockets)
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IOperationClass.htm" target="">IOperationClass</a></td><td><div class="summary">
+            A class of operations that instrument measures
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IProblemClass.htm" target="">IProblemClass</a></td><td><div class="summary">
+            A class of problem that decorate instrument represents
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IQueueInstrument.htm" target="">IQueueInstrument</a></td><td><div class="summary">
+            Queue-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ISchedulingInstrument.htm" target="">ISchedulingInstrument</a></td><td><div class="summary">
+            Timer/scheduling-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ISecurityInstrument.htm" target="">ISecurityInstrument</a></td><td><div class="summary">
+            Security-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_ISocialLogic.htm" target="">ISocialLogic</a></td><td><div class="summary">
+            A class of operations related to social operations / business logic
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IWarningInstrument.htm" target="">IWarningInstrument</a></td><td><div class="summary">
+            Data of this class indicates some abnormality in operation, i.e. "LowDisk"
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IWebInstrument.htm" target="">IWebInstrument</a></td><td><div class="summary">
+            Web-related operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_Instrumentation_IWorkerInstrument.htm" target="">IWorkerInstrument</a></td><td><div class="summary">
+            Worker-related operations i.e. Todo queue
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Instrumentation+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

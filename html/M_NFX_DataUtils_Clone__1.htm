@@ -1,0 +1,107 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>DataUtils.Clone(TRow) Method </title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Clone%3CTRow%3E method" /><meta name="System.Keywords" content="Clone(Of TRow) method" /><meta name="System.Keywords" content="DataUtils.Clone%3CTRow%3E method" /><meta name="System.Keywords" content="DataUtils.Clone(Of TRow) method" /><meta name="Microsoft.Help.F1" content="NFX.DataUtils.Clone``1" /><meta name="Microsoft.Help.Id" content="M:NFX.DataUtils.Clone``1(``0,System.Boolean,System.Boolean,System.Func{System.String,NFX.DataAccess.CRUD.Schema.FieldDef,System.Boolean},System.Func{System.String,System.String,System.Boolean})" /><meta name="Description" content="If source is not null, creates a shallow clone using 'source.CopyFields(copy)'" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX" /><meta name="file" content="M_NFX_DataUtils_Clone__1" /><meta name="guid" content="M_NFX_DataUtils_Clone__1" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">DataUtils<span id="ID0EFBABAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EFBABAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Clone<span id="ID0EDBABAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EDBABAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script><span class="typeparameter">TRow</span><span id="ID0EBBABAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBBABAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script> Method </td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">
+            If source is not null, creates a shallow clone using 'source.CopyFields(copy)'
+            </div><p></p><b>Namespace:</b> <a href="N_NFX.htm" target="">NFX</a><br /><b>Assembly:</b> <span sdata="assembly">NFX</span> (in NFX.dll) Version: 3.0.0.1 (3.0.0.1)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div id="snippetGroup_Syntax" class="code"><div id="ID0EDLCAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EDLCAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EDLCAAAAA_tabimgleft"></div><div id="ID0EDLCAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDLCAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EDLCAAAAA_tab2" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDLCAAAAA','Visual Basic','2','4');return false;">VB</a></div><div id="ID0EDLCAAAAA_tab3" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDLCAAAAA','Visual C++','3','4');return false;">C++</a></div><div id="ID0EDLCAAAAA_tab4" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDLCAAAAA','F#','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDLCAAAAA_tabimgright"></div></div><div id="ID0EDLCAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDLCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EDLCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EDLCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDLCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDLCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDLCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EDLCAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="keyword">public</span> <span class="keyword">static</span> TRow <span class="identifier">Clone</span>&lt;TRow&gt;(
+	<span class="keyword">this</span> TRow <span class="parameter">source</span>,
+	<span class="identifier">bool</span> <span class="parameter">includeAmorphousData</span> = <span class="keyword">true</span>,
+	<span class="identifier">bool</span> <span class="parameter">invokeAmorphousAfterLoad</span> = <span class="keyword">true</span>,
+	<span class="identifier">Func</span>&lt;<span class="identifier">string</span>, <span class="identifier">Schema<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FieldDef</span>, <span class="identifier">bool</span>&gt; <span class="parameter">fieldFilter</span> = <span class="keyword">null</span>,
+	<span class="identifier">Func</span>&lt;<span class="identifier">string</span>, <span class="identifier">string</span>, <span class="identifier">bool</span>&gt; <span class="parameter">amorphousFieldFilter</span> = <span class="keyword">null</span>
+)
+<span class="keyword">where</span> TRow : <span class="identifier">Row</span></pre></div><div id="ID0EDLCAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public static TRow Clone&lt;TRow&gt;(
+	this TRow source,
+	bool includeAmorphousData = true,
+	bool invokeAmorphousAfterLoad = true,
+	Func&lt;string, Schema..::..FieldDef, bool&gt; fieldFilter = null,
+	Func&lt;string, string, bool&gt; amorphousFieldFilter = null
+)
+where TRow : Row</pre></div><div id="ID0EDLCAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;<span class="identifier">ExtensionAttribute</span>&gt; 
+<span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> <span class="identifier">Clone</span>(<span class="keyword">Of</span> TRow <span class="keyword">As</span> <span class="identifier">Row</span>) ( 
+	<span class="parameter">source</span> <span class="keyword">As</span> TRow,
+	Optional <span class="parameter">includeAmorphousData</span> <span class="keyword">As</span> <span class="identifier">Boolean</span> = <span class="keyword">true</span>,
+	Optional <span class="parameter">invokeAmorphousAfterLoad</span> <span class="keyword">As</span> <span class="identifier">Boolean</span> = <span class="keyword">true</span>,
+	Optional <span class="parameter">fieldFilter</span> <span class="keyword">As</span> <span class="identifier">Func</span>(<span class="keyword">Of</span> <span class="identifier">String</span>, <span class="identifier">Schema<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FieldDef</span>, <span class="identifier">Boolean</span>) = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">amorphousFieldFilter</span> <span class="keyword">As</span> <span class="identifier">Func</span>(<span class="keyword">Of</span> <span class="identifier">String</span>, <span class="identifier">String</span>, <span class="identifier">Boolean</span>) = <span class="keyword">Nothing</span>
+) <span class="keyword">As</span> TRow</pre></div><div id="ID0EDLCAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;ExtensionAttribute&gt; 
+Public Shared Function Clone(Of TRow As Row) ( 
+	source As TRow,
+	Optional includeAmorphousData As Boolean = true,
+	Optional invokeAmorphousAfterLoad As Boolean = true,
+	Optional fieldFilter As Func(Of String, Schema..::..FieldDef, Boolean) = Nothing,
+	Optional amorphousFieldFilter As Func(Of String, String, Boolean) = Nothing
+) As TRow</pre></div><div id="ID0EDLCAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">public</span>:
+[<span class="identifier">ExtensionAttribute</span>]
+<span class="keyword">generic</span>&lt;<span class="keyword">typename</span> TRow&gt;
+<span class="keyword">where</span> TRow : <span class="identifier">Row</span> 
+<span class="keyword">static</span> TRow <span class="identifier">Clone</span>(
+	TRow <span class="parameter">source</span>, 
+	<span class="identifier">bool</span> <span class="parameter">includeAmorphousData</span> = <span class="keyword">true</span>, 
+	<span class="identifier">bool</span> <span class="parameter">invokeAmorphousAfterLoad</span> = <span class="keyword">true</span>, 
+	<span class="identifier">Func</span>&lt;<span class="identifier">String</span>^, <span class="identifier">Schema<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FieldDef</span>^, <span class="identifier">bool</span>&gt;^ <span class="parameter">fieldFilter</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Func</span>&lt;<span class="identifier">String</span>^, <span class="identifier">String</span>^, <span class="identifier">bool</span>&gt;^ <span class="parameter">amorphousFieldFilter</span> = <span class="keyword">nullptr</span>
+)</pre></div><div id="ID0EDLCAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public:
+[ExtensionAttribute]
+generic&lt;typename TRow&gt;
+where TRow : Row 
+static TRow Clone(
+	TRow source, 
+	bool includeAmorphousData = true, 
+	bool invokeAmorphousAfterLoad = true, 
+	Func&lt;String^, Schema..::..FieldDef^, bool&gt;^ fieldFilter = nullptr, 
+	Func&lt;String^, String^, bool&gt;^ amorphousFieldFilter = nullptr
+)</pre></div><div id="ID0EDLCAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">static</span> <span class="keyword">member</span> <span class="identifier">Clone</span> : 
+        <span class="parameter">source</span> : 'TRow * 
+        ?<span class="parameter">includeAmorphousData</span> : <span class="identifier">bool</span> * 
+        ?<span class="parameter">invokeAmorphousAfterLoad</span> : <span class="identifier">bool</span> * 
+        ?<span class="parameter">fieldFilter</span> : <span class="identifier">Func</span>&lt;<span class="identifier">string</span>, <span class="identifier">Schema<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FieldDef</span>, <span class="identifier">bool</span>&gt; * 
+        ?<span class="parameter">amorphousFieldFilter</span> : <span class="identifier">Func</span>&lt;<span class="identifier">string</span>, <span class="identifier">string</span>, <span class="identifier">bool</span>&gt; 
+(* Defaults:
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">includeAmorphousData</span> = defaultArg <span class="identifier">includeAmorphousData</span> <span class="keyword">true</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">invokeAmorphousAfterLoad</span> = defaultArg <span class="identifier">invokeAmorphousAfterLoad</span> <span class="keyword">true</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">fieldFilter</span> = defaultArg <span class="identifier">fieldFilter</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">amorphousFieldFilter</span> = defaultArg <span class="identifier">amorphousFieldFilter</span> <span class="keyword">null</span>
+*)
+<span class="keyword">-&gt;</span> 'TRow  <span class="keyword">when</span> 'TRow : <span class="identifier">Row</span></pre></div><div id="ID0EDLCAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre>static member Clone : 
+        source : 'TRow * 
+        ?includeAmorphousData : bool * 
+        ?invokeAmorphousAfterLoad : bool * 
+        ?fieldFilter : Func&lt;string, Schema..::..FieldDef, bool&gt; * 
+        ?amorphousFieldFilter : Func&lt;string, string, bool&gt; 
+(* Defaults:
+        let _includeAmorphousData = defaultArg includeAmorphousData true 
+        let _invokeAmorphousAfterLoad = defaultArg invokeAmorphousAfterLoad true 
+        let _fieldFilter = defaultArg fieldFilter null 
+        let _amorphousFieldFilter = defaultArg amorphousFieldFilter null
+*)
+-&gt; 'TRow  when 'TRow : Row</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EDLCAAAAA');</script></div><div id="parameters"><h4 class="subHeading">Parameters</h4><dl paramName="source"><dt><span class="parameter">source</span></dt><dd>Type: <span class="selflink"><span class="typeparam">TRow</span></span><br /><span></span></dd></dl><dl paramName="includeAmorphousData"><dt><span class="parameter">includeAmorphousData</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System<span id="ID0EBCADKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCADKCAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Boolean</a><br /><span></span></dd></dl><dl paramName="invokeAmorphousAfterLoad"><dt><span class="parameter">invokeAmorphousAfterLoad</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System<span id="ID0EBCACKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCACKCAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Boolean</a><br /><span></span></dd></dl><dl paramName="fieldFilter"><dt><span class="parameter">fieldFilter</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/bb534647" target="_blank">System<span id="ID0EBJABKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBJABKCAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Func</a><span id="ID0EIABKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EIABKCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">String</a>, <a href="T_NFX_DataAccess_CRUD_Schema_FieldDef.htm" target="">Schema<span id="ID0EBFABKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBFABKCAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>FieldDef</a>, <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">Boolean</a><span id="ID0ECABKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABKCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script><br /><span></span></dd></dl><dl paramName="amorphousFieldFilter"><dt><span class="parameter">amorphousFieldFilter</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/bb534647" target="_blank">System<span id="ID0EBJAAKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBJAAKCAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Func</a><span id="ID0EIAAKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EIAAKCAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">String</a>, <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">String</a>, <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">Boolean</a><span id="ID0ECAAKCAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECAAKCAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script><br /><span></span></dd></dl></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Type Parameters</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><dl><dt><span class="parameter">TRow</span></dt><dd></dd></dl><h4 class="subHeading">Return Value</h4>Type: <span class="selflink"><span class="typeparam">TRow</span></span><h4 class="subHeading">Usage Note</h4>In Visual Basic and C#, you can call this method as an instance method on any object of type . When you use instance method syntax to call this method, omit the first parameter. For more information, see <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn.microsoft.com/en-us/library/bb384936.aspx" target="_blank">Extension Methods (Visual Basic)</a> or <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn.microsoft.com/en-us/library/bb383977.aspx" target="_blank">Extension Methods (C# Programming Guide)</a>.<a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="T_NFX_DataUtils.htm" target="">DataUtils Class</a></div><div class="seeAlsoStyle"><a href="AllMembers_T_NFX_DataUtils.htm" target="">DataUtils Members</a></div><div class="seeAlsoStyle"><a href="N_NFX.htm" target="">NFX Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+DataUtils.Clone(TRow)+Method++100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

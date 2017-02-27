@@ -1,0 +1,307 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>FieldAttribute Constructor (Type, String, String, Object, Object, Object, Object, Object, String, Object, Object, Object, Object, Object, Object, String, String, String, String, Object, String, String, String, Object)</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="M:NFX.DataAccess.CRUD.FieldAttribute.#ctor(System.Type,System.String,System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,System.String,System.String,System.Object)" /><meta name="Description" content="NFX.DataAccess.CRUD.FieldAttribute" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.DataAccess.CRUD" /><meta name="file" content="M_NFX_DataAccess_CRUD_FieldAttribute__ctor_3" /><meta name="guid" content="M_NFX_DataAccess_CRUD_FieldAttribute__ctor_3" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">FieldAttribute Constructor (Type, String, String, Object, Object, Object, Object, Object, String, Object, Object, Object, Object, Object, Object, String, String, String, String, Object, String, String, String, Object)</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Initializes a new instance of the <a href="T_NFX_DataAccess_CRUD_FieldAttribute.htm" target="">FieldAttribute</a> class</div><p></p><b>Namespace:</b> <a href="N_NFX_DataAccess_CRUD.htm" target="">NFX.DataAccess.CRUD</a><br /><b>Assembly:</b> <span sdata="assembly">NFX</span> (in NFX.dll) Version: 3.0.0.1 (3.0.0.1)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div id="snippetGroup_Syntax" class="code"><div id="ID0EDBCAAAAA" class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs" id="ID0EDBCAAAAA_tabs"><div class="OH_CodeSnippetContainerTabLeftActive" id="ID0EDBCAAAAA_tabimgleft"></div><div id="ID0EDBCAAAAA_tab1" class="OH_CodeSnippetContainerTabActive" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDBCAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EDBCAAAAA_tab2" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDBCAAAAA','Visual Basic','2','4');return false;">VB</a></div><div id="ID0EDBCAAAAA_tab3" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDBCAAAAA','Visual C++','3','4');return false;">C++</a></div><div id="ID0EDBCAAAAA_tab4" class="OH_CodeSnippetContainerTab" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EDBCAAAAA','F#','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDBCAAAAA_tabimgright"></div></div><div id="ID0EDBCAAAAA_codecollection" class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDBCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EDBCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EDBCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDBCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDBCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDBCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EDBCAAAAA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre><span class="keyword">public</span> <span class="identifier">FieldAttribute</span>(
+	<span class="identifier">Type</span> <span class="parameter">protoType</span>,
+	<span class="identifier">string</span> <span class="parameter">protoFieldName</span>,
+	<span class="identifier">string</span> <span class="parameter">targetName</span> = "*",
+	<span class="identifier">Object</span> <span class="parameter">storeFlag</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">key</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">kind</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">required</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">visible</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">valueList</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">dflt</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">min</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">max</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">minLength</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">maxLength</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">charCase</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">backendName</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">backendType</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">description</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">metadata</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">nonUI</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">formatRegExp</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">formatDescr</span> = <span class="keyword">null</span>,
+	<span class="identifier">string</span> <span class="parameter">displayFormat</span> = <span class="keyword">null</span>,
+	<span class="identifier">Object</span> <span class="parameter">isArow</span> = <span class="keyword">null</span>
+)</pre></div><div id="ID0EDBCAAAAA_code_Plain_Div1" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public FieldAttribute(
+	Type protoType,
+	string protoFieldName,
+	string targetName = "*",
+	Object storeFlag = null,
+	Object key = null,
+	Object kind = null,
+	Object required = null,
+	Object visible = null,
+	string valueList = null,
+	Object dflt = null,
+	Object min = null,
+	Object max = null,
+	Object minLength = null,
+	Object maxLength = null,
+	Object charCase = null,
+	string backendName = null,
+	string backendType = null,
+	string description = null,
+	string metadata = null,
+	Object nonUI = null,
+	string formatRegExp = null,
+	string formatDescr = null,
+	string displayFormat = null,
+	Object isArow = null
+)</pre></div><div id="ID0EDBCAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">Public</span> <span class="keyword">Sub</span> <span class="identifier">New</span> ( 
+	<span class="parameter">protoType</span> <span class="keyword">As</span> <span class="identifier">Type</span>,
+	<span class="parameter">protoFieldName</span> <span class="keyword">As</span> <span class="identifier">String</span>,
+	Optional <span class="parameter">targetName</span> <span class="keyword">As</span> <span class="identifier">String</span> = "*",
+	Optional <span class="parameter">storeFlag</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">key</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">kind</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">required</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">visible</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">valueList</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">dflt</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">min</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">max</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">minLength</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">maxLength</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">charCase</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">backendName</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">backendType</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">description</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">metadata</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">nonUI</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">formatRegExp</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">formatDescr</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">displayFormat</span> <span class="keyword">As</span> <span class="identifier">String</span> = <span class="keyword">Nothing</span>,
+	Optional <span class="parameter">isArow</span> <span class="keyword">As</span> <span class="identifier">Object</span> = <span class="keyword">Nothing</span>
+)</pre></div><div id="ID0EDBCAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>Public Sub New ( 
+	protoType As Type,
+	protoFieldName As String,
+	Optional targetName As String = "*",
+	Optional storeFlag As Object = Nothing,
+	Optional key As Object = Nothing,
+	Optional kind As Object = Nothing,
+	Optional required As Object = Nothing,
+	Optional visible As Object = Nothing,
+	Optional valueList As String = Nothing,
+	Optional dflt As Object = Nothing,
+	Optional min As Object = Nothing,
+	Optional max As Object = Nothing,
+	Optional minLength As Object = Nothing,
+	Optional maxLength As Object = Nothing,
+	Optional charCase As Object = Nothing,
+	Optional backendName As String = Nothing,
+	Optional backendType As String = Nothing,
+	Optional description As String = Nothing,
+	Optional metadata As String = Nothing,
+	Optional nonUI As Object = Nothing,
+	Optional formatRegExp As String = Nothing,
+	Optional formatDescr As String = Nothing,
+	Optional displayFormat As String = Nothing,
+	Optional isArow As Object = Nothing
+)</pre></div><div id="ID0EDBCAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">public</span>:
+<span class="identifier">FieldAttribute</span>(
+	<span class="identifier">Type</span>^ <span class="parameter">protoType</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">protoFieldName</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">targetName</span> = L"*", 
+	<span class="identifier">Object</span>^ <span class="parameter">storeFlag</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">key</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">kind</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">required</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">visible</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">valueList</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">dflt</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">min</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">max</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">minLength</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">maxLength</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">charCase</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">backendName</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">backendType</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">description</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">metadata</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">nonUI</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">formatRegExp</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">formatDescr</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">displayFormat</span> = <span class="keyword">nullptr</span>, 
+	<span class="identifier">Object</span>^ <span class="parameter">isArow</span> = <span class="keyword">nullptr</span>
+)</pre></div><div id="ID0EDBCAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public:
+FieldAttribute(
+	Type^ protoType, 
+	String^ protoFieldName, 
+	String^ targetName = L"*", 
+	Object^ storeFlag = nullptr, 
+	Object^ key = nullptr, 
+	Object^ kind = nullptr, 
+	Object^ required = nullptr, 
+	Object^ visible = nullptr, 
+	String^ valueList = nullptr, 
+	Object^ dflt = nullptr, 
+	Object^ min = nullptr, 
+	Object^ max = nullptr, 
+	Object^ minLength = nullptr, 
+	Object^ maxLength = nullptr, 
+	Object^ charCase = nullptr, 
+	String^ backendName = nullptr, 
+	String^ backendType = nullptr, 
+	String^ description = nullptr, 
+	String^ metadata = nullptr, 
+	Object^ nonUI = nullptr, 
+	String^ formatRegExp = nullptr, 
+	String^ formatDescr = nullptr, 
+	String^ displayFormat = nullptr, 
+	Object^ isArow = nullptr
+)</pre></div><div id="ID0EDBCAAAAA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">new</span> : 
+        <span class="parameter">protoType</span> : <span class="identifier">Type</span> * 
+        <span class="parameter">protoFieldName</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">targetName</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">storeFlag</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">key</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">kind</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">required</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">visible</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">valueList</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">dflt</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">min</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">max</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">minLength</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">maxLength</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">charCase</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">backendName</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">backendType</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">description</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">metadata</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">nonUI</span> : <span class="identifier">Object</span> * 
+        ?<span class="parameter">formatRegExp</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">formatDescr</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">displayFormat</span> : <span class="identifier">string</span> * 
+        ?<span class="parameter">isArow</span> : <span class="identifier">Object</span> 
+(* Defaults:
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">targetName</span> = defaultArg <span class="identifier">targetName</span> "*"
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">storeFlag</span> = defaultArg <span class="identifier">storeFlag</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">key</span> = defaultArg <span class="identifier">key</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">kind</span> = defaultArg <span class="identifier">kind</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">required</span> = defaultArg <span class="identifier">required</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">visible</span> = defaultArg <span class="identifier">visible</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">valueList</span> = defaultArg <span class="identifier">valueList</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">dflt</span> = defaultArg <span class="identifier">dflt</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">min</span> = defaultArg <span class="identifier">min</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">max</span> = defaultArg <span class="identifier">max</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">minLength</span> = defaultArg <span class="identifier">minLength</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">maxLength</span> = defaultArg <span class="identifier">maxLength</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">charCase</span> = defaultArg <span class="identifier">charCase</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">backendName</span> = defaultArg <span class="identifier">backendName</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">backendType</span> = defaultArg <span class="identifier">backendType</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">description</span> = defaultArg <span class="identifier">description</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">metadata</span> = defaultArg <span class="identifier">metadata</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">nonUI</span> = defaultArg <span class="identifier">nonUI</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">formatRegExp</span> = defaultArg <span class="identifier">formatRegExp</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">formatDescr</span> = defaultArg <span class="identifier">formatDescr</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">displayFormat</span> = defaultArg <span class="identifier">displayFormat</span> <span class="keyword">null</span> 
+        <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">isArow</span> = defaultArg <span class="identifier">isArow</span> <span class="keyword">null</span>
+*)
+<span class="keyword">-&gt;</span> <span class="identifier">FieldAttribute</span></pre></div><div id="ID0EDBCAAAAA_code_Plain_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre>new : 
+        protoType : Type * 
+        protoFieldName : string * 
+        ?targetName : string * 
+        ?storeFlag : Object * 
+        ?key : Object * 
+        ?kind : Object * 
+        ?required : Object * 
+        ?visible : Object * 
+        ?valueList : string * 
+        ?dflt : Object * 
+        ?min : Object * 
+        ?max : Object * 
+        ?minLength : Object * 
+        ?maxLength : Object * 
+        ?charCase : Object * 
+        ?backendName : string * 
+        ?backendType : string * 
+        ?description : string * 
+        ?metadata : string * 
+        ?nonUI : Object * 
+        ?formatRegExp : string * 
+        ?formatDescr : string * 
+        ?displayFormat : string * 
+        ?isArow : Object 
+(* Defaults:
+        let _targetName = defaultArg targetName "*"
+        let _storeFlag = defaultArg storeFlag null 
+        let _key = defaultArg key null 
+        let _kind = defaultArg kind null 
+        let _required = defaultArg required null 
+        let _visible = defaultArg visible null 
+        let _valueList = defaultArg valueList null 
+        let _dflt = defaultArg dflt null 
+        let _min = defaultArg min null 
+        let _max = defaultArg max null 
+        let _minLength = defaultArg minLength null 
+        let _maxLength = defaultArg maxLength null 
+        let _charCase = defaultArg charCase null 
+        let _backendName = defaultArg backendName null 
+        let _backendType = defaultArg backendType null 
+        let _description = defaultArg description null 
+        let _metadata = defaultArg metadata null 
+        let _nonUI = defaultArg nonUI null 
+        let _formatRegExp = defaultArg formatRegExp null 
+        let _formatDescr = defaultArg formatDescr null 
+        let _displayFormat = defaultArg displayFormat null 
+        let _isArow = defaultArg isArow null
+*)
+-&gt; FieldAttribute</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EDBCAAAAA');</script></div><div id="parameters"><h4 class="subHeading">Parameters</h4><dl paramName="protoType"><dt><span class="parameter">protoType</span></dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">System<span id="ID0EBCAXACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAXACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Type</a><br /><span></span></dd></dl><dl paramName="protoFieldName"><dt><span class="parameter">protoFieldName</span></dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAWACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAWACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="targetName"><dt><span class="parameter">targetName</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAVACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAVACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="storeFlag"><dt><span class="parameter">storeFlag</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAUACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAUACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="key"><dt><span class="parameter">key</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCATACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCATACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="kind"><dt><span class="parameter">kind</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCASACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCASACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="required"><dt><span class="parameter">required</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCARACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCARACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="visible"><dt><span class="parameter">visible</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAQACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAQACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="valueList"><dt><span class="parameter">valueList</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAPACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAPACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="dflt"><dt><span class="parameter">dflt</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAOACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAOACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="min"><dt><span class="parameter">min</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCANACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCANACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="max"><dt><span class="parameter">max</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAMACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAMACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="minLength"><dt><span class="parameter">minLength</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCALACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCALACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="maxLength"><dt><span class="parameter">maxLength</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAKACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAKACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="charCase"><dt><span class="parameter">charCase</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAJACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAJACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="backendName"><dt><span class="parameter">backendName</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAIACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAIACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="backendType"><dt><span class="parameter">backendType</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAHACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAHACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="description"><dt><span class="parameter">description</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAGACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAGACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="metadata"><dt><span class="parameter">metadata</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCAFACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAFACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="nonUI"><dt><span class="parameter">nonUI</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAEACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAEACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl><dl paramName="formatRegExp"><dt><span class="parameter">formatRegExp</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCADACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCADACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="formatDescr"><dt><span class="parameter">formatDescr</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCACACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCACACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="displayFormat"><dt><span class="parameter">displayFormat</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System<span id="ID0EBCABACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCABACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>String</a><br /><span></span></dd></dl><dl paramName="isArow"><dt><span class="parameter">isArow</span> (Optional)</dt><dd>Type: <img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="ID0EBCAAACAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBCAAACAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Object</a><br /><span></span></dd></dl></div><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="T_NFX_DataAccess_CRUD_FieldAttribute.htm" target="">FieldAttribute Class</a></div><div class="seeAlsoStyle"><a href="AllMembers_T_NFX_DataAccess_CRUD_FieldAttribute.htm" target="">FieldAttribute Members</a></div><div class="seeAlsoStyle"><a href="Overload_NFX_DataAccess_CRUD_FieldAttribute__ctor.htm" target="">FieldAttribute Overload</a></div><div class="seeAlsoStyle"><a href="N_NFX_DataAccess_CRUD.htm" target="">NFX.DataAccess.CRUD Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+FieldAttribute+Constructor+(Type%2c+String%2c+String%2c+Object%2c+Object%2c+Object%2c+Object%2c+Object%2c+String%2c+Object%2c+Object%2c+Object%2c+Object%2c+Object%2c+Object%2c+String%2c+String%2c+String%2c+String%2c+Object%2c+String%2c+String%2c+String%2c+Object)+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

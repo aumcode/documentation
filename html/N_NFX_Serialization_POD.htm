@@ -1,0 +1,58 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.Serialization.POD Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.Serialization.POD namespace" /><meta name="Microsoft.Help.F1" content="NFX.Serialization.POD" /><meta name="Microsoft.Help.Id" content="N:NFX.Serialization.POD" /><meta name="Description" content="Provides Portable Object Document serialization functionality" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.Serialization.POD" /><meta name="file" content="N_NFX_Serialization_POD" /><meta name="guid" content="N_NFX_Serialization_POD" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.Serialization.POD Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Provides Portable Object Document serialization functionality</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_CompositeArrayData.htm" target="">CompositeArrayData</a></td><td><div class="summary">
+            Represents a composite (non primitive) array data stored in Portable Object Document.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_CompositeCustomData.htm" target="">CompositeCustomData</a></td><td><div class="summary">
+            Represents a composite (non primitive) data stored in Portable Object Document.
+            This data is obtained from native types using ISerializable interface or running PortableObjectDocumentTransform attribute.
+            This class is NOT used for native types that perform default reflection-based serialization,
+             for that CompositeReflectedData is used
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_CompositeData.htm" target="">CompositeData</a></td><td><div class="summary">
+            Represents a composite (non primitive) data stored in Portable Object Document.
+            This data is obtained from native types either automatically using reflection or
+             from types that perform custom serialization using ISerializable interface
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_CompositeReflectedData.htm" target="">CompositeReflectedData</a></td><td><div class="summary">
+            Represents a composite (non primitive) data stored in Portable Object Document.
+            This data is obtained from native types automatically using reflection.
+            This class is NOT used for native types that perform custom serialization using ISerializable interface,
+             for that CompositeCustomData is used
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_MetaComplexType.htm" target="">MetaComplexType</a></td><td><div class="summary">
+            Represents information about the composite type of data that is stored in Portable Object Document
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_MetaComplexType_MetaField.htm" target="">MetaComplexType<span id="ID0EBABJABAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABJABAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>MetaField</a></td><td><div class="summary">
+            Represents an information about a field of same type
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_MetaPrimitiveType.htm" target="">MetaPrimitiveType</a></td><td><div class="summary">
+            Represents primitive built-in types in the framework that are stored in Portable Object Document
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_MetaType.htm" target="">MetaType</a></td><td><div class="summary">
+            Provides information about data types stored in Portable Object Document
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PODDeserializationException.htm" target="">PODDeserializationException</a></td><td><div class="summary">
+            Base exception thrown by the PortableObjectDocument when deserializing original objects
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PODException.htm" target="">PODException</a></td><td><div class="summary">
+            Base exception thrown by the Portable Object Document serialization format
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PODSerializationException.htm" target="">PODSerializationException</a></td><td><div class="summary">
+            Base exception thrown by the PortableObjectDocument when serializing objects into document
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PortableObjectDocument.htm" target="">PortableObjectDocument</a></td><td><div class="summary">
+            Represents an graph of arbitrary CLR objects as a graph of well known POD-objects which are based on primitive-only types.
+            This class acts as a Document-Object-Model container that hosts comlex CLR types that may change their structure
+             but need to be deserialized even if deserialization is partial / requires transform
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PortableObjectDocumentDeserializationTransform.htm" target="">PortableObjectDocumentDeserializationTransform</a></td><td><div class="summary">
+            Represents an entity that knows how to transform/apply CLR data types from PortableObjectDocument
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_PortableObjectDocumentSerializationTransform.htm" target="">PortableObjectDocumentSerializationTransform</a></td><td><div class="summary">
+            Represents an entity that knows how to transform/apply CLR data types to PortableObjectDocument
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_Serialization_POD_ReadingStrategy.htm" target="">ReadingStrategy</a></td><td><div class="summary">
+            Represents logic that resolves POD data types and field layouts to CLR types/layouts.
+            Extend this type and pass its instance into PortableObjectDocument.ToOriginalObject(ReadingStrategy)
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_Serialization_POD_CustomTypedEntry.htm" target="">CustomTypedEntry</a></td><td><div class="summary">
+            Used in custom data bags to specify the type of the object contained in Data property if it is intended to be re-interpreted
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.Serialization.POD+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>

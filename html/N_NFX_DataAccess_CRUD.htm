@@ -1,0 +1,175 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>NFX.DataAccess.CRUD Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="NFX.DataAccess.CRUD namespace" /><meta name="Microsoft.Help.F1" content="NFX.DataAccess.CRUD" /><meta name="Microsoft.Help.Id" content="N:NFX.DataAccess.CRUD" /><meta name="Description" content="Facilitates working with SQL and NoSQL backends on the level of records, rowsets, tables and queries" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="NFX.DataAccess.CRUD" /><meta name="file" content="N_NFX_DataAccess_CRUD" /><meta name="guid" content="N_NFX_DataAccess_CRUD" /><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdLogoColumn"><img src="./../icons/NFX.logo.35.png" /></td><td class="OH_tdTitleColumn">NFX.DataAccess.CRUD Namespace</td><td class="OH_tdRunningTitleColumn">NFX Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p><div class="summary">Facilitates working with SQL and NoSQL backends on the level of records, rowsets, tables and queries</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Class</th><th class="ps_descriptionColumn">Description</th></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_AmorphousDynamicRow.htm" target="">AmorphousDynamicRow</a></td><td><div class="summary">
+            Represents a row of data which has a schema only known at run-time that also implements IAmorphousData
+            interface that allows this row to store "extra" data that does not comply with the current schema.
+            Dynamic rows store data in object[] internally, providing better flexibility(ability to define schema at runtime) than TypedRows at the expense of performance.
+            This class is not sealed so implementors may override configuration persistence
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_AmorphousTypedRow.htm" target="">AmorphousTypedRow</a></td><td><div class="summary">
+            Represents a type-safe row of data when schema is known at compile-time that also implements IAmorphousData
+            interface that allows this row to store "extra" data that does not comply with the current schema.
+            Typed rows store data in instance fields, providing better performance and schema definition compile-time checking than DynamicRows
+            at the expense of inability to define schema at runtime
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDException.htm" target="">CRUDException</a></td><td><div class="summary">
+            Thrown by CRUD data access classes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDFieldValidationException.htm" target="">CRUDFieldValidationException</a></td><td><div class="summary">
+            Thrown by CRUD data access classes when field validation does not pass
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDOperationCallContext.htm" target="">CRUDOperationCallContext</a></td><td><div class="summary">
+            Establishes a thead-static context which surrounds CRUD operations. You can derive your own classes, the .ctor must be chained.
+            The context can be nested. A call to .ctor must be balanced with .Dispose().
+            This is needed to pass some out-of-band information in some special cases to CRUD operations without changing
+            the caller interface, i.e. to swap database connection string.
+            This class IS NOT THREAD SAFE, so in cases of async operations, the context captures extra parameters ONLY for initial ASYNC INVOCATION, that is-
+             a true ASYNC implementation must pass the reference along the task execution line (in which case the object may be already Disposed but usable for property access
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDQueryHandler.htm" target="">CRUDQueryHandler</a></td><td><div class="summary">
+            Represents an entity that can execute a query. The implementation may be called by multiple threads and must be safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDQueryHandler_1.htm" target="">CRUDQueryHandler<span id="ID0ECAB2AEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECAB2AEAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TStore<span id="ID0EAAB2AEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAAB2AEAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Represents an entity that can execute a query. The implementation may be called by multiple threads and must be safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDRowValidationException.htm" target="">CRUDRowValidationException</a></td><td><div class="summary">
+            Thrown by CRUD data access classes when field validation does not pass
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDTransaction.htm" target="">CRUDTransaction</a></td><td><div class="summary">
+            Represents an abstract base for CRUDTransactions that perform particular backend CRUD work in overriden classes
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDValidationException.htm" target="">CRUDValidationException</a></td><td><div class="summary">
+            Thrown by CRUD data access classes when validation does not pass
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Cursor.htm" target="">Cursor</a></td><td><div class="summary">
+            Represents a buffer-less unidicrectional reader that binds IEnumerable(Row) and the backend resource
+            (such as SQLReader or other object which is internal to the backend).
+            The cursor is NOT thread-safe and must be disposed properly by closing all resources associated with it.
+            Only one iteration (one call to GetEnumerator) is possible
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/protclass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_NFX_DataAccess_CRUD_Cursor_enumerator.htm" target="">Cursor<span id="ID0EBABWAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABWAEAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>enumerator</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_DynamicRow.htm" target="">DynamicRow</a></td><td><div class="summary">
+            Represents a row of data which has a schema only known at run-time.
+            Dynamic rows store data in object[] internally, providing better flexibility(ability to define schema at runtime) than TypedRows at the expense of performance.
+            This class is not sealed so implementors may override configuration persistence
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_FieldAttribute.htm" target="">FieldAttribute</a></td><td><div class="summary">
+            Provides information about table schema that this typed row is a part of
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_FormModel.htm" target="">FormModel</a></td><td><div class="summary">
+            Represents a "model" (in MVC terms) of a data-entry form.
+            Form models are statically typed - contain fields and can contain "extra amorphous" data
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_JSONMappings.htm" target="">JSONMappings</a></td><td><div class="summary">
+            Facilitates mapping of CRUD/CLR types/values to JSON and back to CLR/CRUD
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_NotImplementedCRUDDataStore.htm" target="">NotImplementedCRUDDataStore</a></td><td></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Query.htm" target="">Query</a></td><td><div class="summary">
+            Defines a query sent into ICRUDDataStore implementor to retrieve data.
+            A Query is a named bag of paremeters where every parameter has a name and the value.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Query_Param.htm" target="">Query<span id="ID0EBABPAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABPAEAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>Param</a></td><td><div class="summary">
+            Represents a CRUD query parameter
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Query_1.htm" target="">Query<span id="ID0ECABOAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0ECABOAEAAAAA?vb=(Of |cpp=&lt;|cs=&lt;|fs=&lt;'|nu=(");
+				</script>TResultRow<span id="ID0EAABOAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EAABOAEAAAAA?vb=)|cpp=&gt;|cs=&gt;|fs=&gt;|nu=)");
+				</script></a></td><td><div class="summary">
+            Generic version of Query
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_QueryResolver.htm" target="">QueryResolver</a></td><td><div class="summary">
+            Infrastructure class - not for app developers.
+            Resolves Query objects into query handlers. Query names are case-insensitive.
+            This class is thread-safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_QuerySource.htm" target="">QuerySource</a></td><td><div class="summary">
+             Represents query source code with pre-processed pragmas
+             </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_QuerySource_ColumnDef.htm" target="">QuerySource<span id="ID0EBABLAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABLAEAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>ColumnDef</a></td><td><div class="summary">
+            Provides column definition in QuerySource
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Row.htm" target="">Row</a></td><td><div class="summary">
+            Base class for any CRUD row. This class has two direct subtypes - DynamicRow and TypedRow.
+            Rows are NOT THREAD SAFE by definition
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_RowEqualityComparer.htm" target="">RowEqualityComparer</a></td><td><div class="summary">
+            Checks for reference equality. Use RowEqualityComparer.Instance
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Rowset.htm" target="">Rowset</a></td><td><div class="summary">
+            Implements a rowset that supports row change logging and CRUD operations.
+            Rowsets are not optimal for data replication as they perform linear search which is slow, however
+            Rowset class supports sorting. In contrast, Tables are kind of rowsets that keep data pre-sorted by key
+            thus facilitating quick searching
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_RowsetBase.htm" target="">RowsetBase</a></td><td><div class="summary">
+            Provides base for rowset implementation.
+            Rowsets are mutable lists of rows where all rows must have the same schema, however a rowset may contain a mix of
+             dynamic and typed rows as long as they have the same schema.
+            Rowsets are not thread-safe
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Schema.htm" target="">Schema</a></td><td><div class="summary">
+            Describes a schema for rows: TypedRows and DynamicRows.
+            DynamicRows are "shaped" in memory from schema, whereas, TypedRows define schema.
+            Schema for Typedrows is cached in static dictionary for speed
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Schema_FieldDef.htm" target="">Schema<span id="ID0EBABFAEAAAAA"> </span><script type="text/javascript">
+					addToLanSpecTextIdSet("ID0EBABFAEAAAAA?vb=.|cpp=::|cs=.|fs=.|nu=.");
+				</script>FieldDef</a></td><td><div class="summary">
+            Provides a definition for a single field of a row
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_Table.htm" target="">Table</a></td><td><div class="summary">
+            Implements a master table. Tables are rowsets that are pre-sorted by keys.
+            They are used in scenarios when in-memory data replication is needed.
+            A table supports efficient FindKey() operation but does not support sorting.
+            This class is not thread-safe.
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_TableAttribute.htm" target="">TableAttribute</a></td><td><div class="summary">
+            Provides information about table schema that this row is a part of
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_TargetedAttribute.htm" target="">TargetedAttribute</a></td><td><div class="summary">
+            Provides a base for attributes which ar targeted for particular techlology (i.e. "ORACLE")
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_TypedRow.htm" target="">TypedRow</a></td><td><div class="summary">
+            Represents a type-safe row of data when schema is known at compile-time.
+            Typed rows store data in instance fields, providing better performance and schema definition compile-time checking than DynamicRows
+            at the expense of inability to define schema at runtime
+            </div></td></tr><tr data="class; public"><td><img src="./../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="T_NFX_DataAccess_CRUD_UniqueSequenceAttribute.htm" target="">UniqueSequenceAttribute</a></td><td><div class="summary">
+            Provides information for unique sequence gen: scope and name
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Structures</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Structure</th><th class="ps_descriptionColumn">Description</th></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_CRUD_CacheParams.htm" target="">CacheParams</a></td><td><div class="summary">
+            Implements ICacheParams - supplied caching parameters
+            </div></td></tr><tr data="structure; public"><td><img src="./../icons/protstructure.gif" alt="Protected structure" title="Protected structure" /></td><td><a href="T_NFX_DataAccess_CRUD_iListReadOnly.htm" target="">iListReadOnly</a></td><td></td></tr><tr data="structure; public"><td><img src="./../icons/pubstructure.gif" alt="Public structure" title="Public structure" /></td><td><a href="T_NFX_DataAccess_CRUD_RowChange.htm" target="">RowChange</a></td><td><div class="summary">
+            Describes row modification
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Interface</th><th class="ps_descriptionColumn">Description</th></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_IAmorphousData.htm" target="">IAmorphousData</a></td><td><div class="summary">
+            Denotes an entity, which is typically a row-derivative, that has extra data fields that are not
+            defined by particular schema and get represented as {name:value} map instead (schema-less data).
+            This interface is usually implemented by rows that support version changing between releases, i.e. when
+            structured storage (such as Mongo DB) stores more fields than are currently declared in the row the extra fields will be placed
+             in the AmorphousData collection. This interface also provides hook BeforeSave()/AfterLoad() that allow for transforms between
+             Amorphous and "hard-schema" data models
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICacheParams.htm" target="">ICacheParams</a></td><td><div class="summary">
+            Supplies caching params
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDDataStore.htm" target="">ICRUDDataStore</a></td><td><div class="summary">
+            Represents a DataStore that supports CRUD operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDDataStoreImplementation.htm" target="">ICRUDDataStoreImplementation</a></td><td></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDOperations.htm" target="">ICRUDOperations</a></td><td><div class="summary">
+            Describes an entity that performs single (not in transaction/batch)CRUD operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDQueryExecutionContext.htm" target="">ICRUDQueryExecutionContext</a></td><td><div class="summary">
+            Represents a context (such as Sql Server connection + transaction scope, or Hadoop connect string etc.) for query execution.
+            This is a marker interface implemented by particular providers
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDQueryResolver.htm" target="">ICRUDQueryResolver</a></td><td><div class="summary">
+            Represents a class that resolves Query into suitable handler that can execute it
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_ICRUDTransactionOperations.htm" target="">ICRUDTransactionOperations</a></td><td><div class="summary">
+            Describes an entity that performs single (not in transaction/batch)CRUD operations
+            </div></td></tr><tr data="interface; public"><td><img src="./../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_NFX_DataAccess_CRUD_IValidatable.htm" target="">IValidatable</a></td><td><div class="summary">
+            Denotes an entity that supports validation
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Delegates</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Delegate</th><th class="ps_descriptionColumn">Description</th></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_DataAccess_CRUD_FieldFilterFunc.htm" target="">FieldFilterFunc</a></td><td><div class="summary">
+            Provides filter predicate for CRUD operations. Return true to include the specified field
+            </div></td></tr><tr data="delegate; public"><td><img src="./../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" /></td><td><a href="T_NFX_DataAccess_CRUD_SetFieldFunc.htm" target="">SetFieldFunc</a></td><td><div class="summary">
+            Injects function that tries to set field value. May elect to skip the set and return false to indicate failure(instead of throwing exception)
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="typeList" class="members"><tr><th class="ps_iconColumn">
+					 
+				</th><th class="ps_nameColumn">Enumeration</th><th class="ps_descriptionColumn">Description</th></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_CRUDDataStoreType.htm" target="">CRUDDataStoreType</a></td><td><div class="summary">
+            Denotes types of CRUD stores
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_DataKind.htm" target="">DataKind</a></td><td><div class="summary">
+            Provides hint/classification for field textual data
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_FormMode.htm" target="">FormMode</a></td><td><div class="summary">
+            Denotes form modes: unspecified | insert | edit
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_RowChangeType.htm" target="">RowChangeType</a></td><td><div class="summary">
+            Describes what kind of modification was done
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_TransactionDisposeBehavior.htm" target="">TransactionDisposeBehavior</a></td><td><div class="summary">
+            Specifies how transaction scope behaves on scope exit
+            </div></td></tr><tr data="enumeration; public"><td><img src="./../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_NFX_DataAccess_CRUD_TransactionStatus.htm" target="">TransactionStatus</a></td><td><div class="summary">
+            Denotes transaction statuses
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><p><a href="http://www.itadapter.com" target="_blank"><img src="./../icons/online_icon.gif" class="OH_offlineIcon" alt="Online" title="Online" /> 
+						Copyright © 2006-2017 ITAdapter Corp Inc. (http://www.itadapter.com)</a></p><div class="OH_feedbacklink"><a href="mailto:nfx@itadapter.com?subject=NFX+Class+Library+NFX.DataAccess.CRUD+Namespace+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Contact Us.</div></div></body></html>
